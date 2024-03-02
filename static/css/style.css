@@ -14,14 +14,6 @@ body {
 
 /* Navbar */
 
-.topnav {
-    background-color: #ffffff9d;
-}
-
-.navbar {
-    background-color: #ffffff9d;
-}
-
 .logo-font {
     font-family: Playfair Display, sans-serif;
     font-size: 1.5rem;
@@ -31,6 +23,10 @@ body {
     width: fit-content;
 }
 
+.dropdown-menu {
+    background-color:  #f7f3ed !important;
+}
+
 .shop-now-button {
     background: black;
     color: white;
@@ -38,8 +34,11 @@ body {
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: rgba(255, 255, 255, 0.445);
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    font-size: 1.2rem;
+    border: 1px solid black;
 }
 
 .shop-now-button:hover,
@@ -48,7 +47,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: black;
     color: white;
 }
 
@@ -60,8 +59,8 @@ body {
     border: 1px solid black !important;
 }
 
-.bg-black {
-    background: #000 !important;
+.bg-sand {
+    background-color:  #f7f3ed !important;
 }
 
 /* Home Section */
@@ -84,18 +83,21 @@ body {
     line-height: 1;
 }
 
-#home .title {
-    font-size: 100px;
+.title1 {
+    font-size: 7rem;
+    margin-top: 150px;
 }
 
-#home .paragraf {
-    font-size: 30px;
+.title2 {
+    font-size: 7rem;
 }
 
-.btn {
-    margin-top: 50px;
-    font-size: 20px;
+.paragraf {
+    
+    font-size: 2rem;
 }
+
+
 
 /* -------------------------------- Media Queries */
 
@@ -118,5 +120,55 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .title1 {
+        font-size: 5rem;
+    }
+    
+    .title2 {
+        font-size: 5rem;
+    }
+    
+    .paragraf {
+        font-size: 1.4rem;
+    }
+
+    .btn-black {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .title1 {
+        font-size: 3.4rem;
+    }
+    
+    .title2 {
+        font-size: 3.4rem;
+    }
+    
+    .paragraf {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .title1 {
+        font-size: 3rem;
+    }
+    
+    .title2 {
+        font-size: 3rem;
+    }
+    
+    .paragraf {
+        font-size: 1rem;
     }
 }

@@ -1,73 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Hedvig+Letters+Serif:opsz@12..24&family=Play&family=Playfair+Display:ital@0;1&family=Roboto+Mono:wght@300;400&display=swap');
 
+
 html {
-    height: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
     color: #555;
     font-family: Fira Sans, sans-serif;
 }
 
-/* NavBar */
+/* Navbar */
+
+.topnav {
+    background-color: #ffffff9d;
+}
 
 .navbar {
-    position: absolute;
-    height: 7rem;
-    width: 100%;
-    transition: all 0.5s;
-    font-size: 1.3rem;
-    background: #ffffff96 !important;
-
+    background-color: #ffffff9d;
 }
 
-.navbar-brand {
+.logo-font {
     font-family: Playfair Display, sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
-.nav-link {
-    font-family: Fira Sans, sans-serif;
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
     color: white;
 }
 
-/* Collapse Button */
-
-.fa-1x {
-    font-size: 2rem;
-  }
-.navbar-toggler.toggler-example {
-    cursor: pointer;
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
 }
 
-/* Icons */
-
-.fa-regular{
-	border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
-	background:#b4b4b4;
+.text-black {
+    color: #000 !important;
 }
 
-.fa-regular:hover{
-	background: #b99c3b;
+.border-black {
+    border: 1px solid black !important;
 }
 
-/* HOME Section */
-
-#home {
-    width: 100%;
-    height: 100vh;
+.bg-black {
+    background: #000 !important;
 }
+
+/* Home Section */
+
 
 .masthead {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .color-overlay {
@@ -87,4 +90,33 @@ body {
 
 #home .paragraf {
     font-size: 30px;
+}
+
+.btn {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
 }

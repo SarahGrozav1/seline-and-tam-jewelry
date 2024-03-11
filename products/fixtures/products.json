@@ -7,7 +7,7 @@
         "name": "Sunbeam Hoop",
         "description": "Radiant golden hoops embody celestial charm with elegant, luminous allure.",
         "price": 115,
-        "category": "Earring",
+        "category": 1,
         "rating": 4.6,
         "image": "dione1.jpg"
       }
@@ -20,7 +20,7 @@
         "name": "Golden Grace",
         "description": "Exudes elegance and sophistication with a touch of timeless beauty.",
         "price": 130,
-        "category": "Necklace",
+        "category": 2,
         "rating": 5.0,
         "image": "dione2.jpg"
       }
@@ -33,7 +33,7 @@
         "name": "Champagne Sparkle",
         "description": "Spectacular ring dazzles with effervescent charm and timeless elegance.",
         "price": 98.5,
-        "category": "Ring",
+        "category": 3,
         "rating": 4.8,
         "image": "dione3.jpg"
       }
@@ -46,7 +46,7 @@
         "name": "Gilded Serenity",
         "description": "Radiates tranquility and luxury with a serene and timeless allure.",
         "price": 169.99,
-        "category": "Necklace",
+        "category": 2,
         "rating": 4.4,
         "image": "dione4.jpg"
       }
@@ -59,7 +59,7 @@
         "name": "Radiant Night",
         "description": "Mesmerizing piece exuding celestial elegance, capturing moonlit allure beautifully.",
         "price": 156.3,
-        "category": "Necklace",
+        "category": 2,
         "rating": 5,
         "image": "dione5.jpg"
       }
@@ -72,7 +72,7 @@
         "name": "Radiant Sunflower",
         "description": "Vibrant charm radiates from this exquisite necklace, capturing nature's beauty.",
         "price": 89.9,
-        "category": "Necklace",
+        "category": 2,
         "rating": 4.7,
         "image": "dione6.jpg"
       }
@@ -85,7 +85,7 @@
         "name": "Golden Cascade",
         "description": "Elegant design cascades like golden streams, exuding timeless sophistication allure.",
         "price": 165,
-        "category": "Necklace",
+        "category": 2,
         "rating": 5.0,
         "image": "dione7.jpg"
       }
@@ -98,7 +98,7 @@
         "name": "Gilded Glamour",
         "description": "Exquisite earrings radiate opulence and sophistication, embodying chic, glamorous allure.",
         "price": 88.99,
-        "category": "Earring",
+        "category": 1,
         "rating": 4.7,
         "image": "dione8.jpg"
       }
@@ -111,7 +111,7 @@
         "name": "Golden Hour Charm",
         "description": "Captures essence of golden hour, radiating warmth and timeless charm.",
         "price": 75,
-        "category": "Bracelet",
+        "category": 4,
         "rating": 4.8,
         "image": "selene1.jpg"
       }
@@ -124,7 +124,7 @@
         "name": "Simple Rose Pink Diamond",
         "description": "Elegant piece adorned with delicate rose pink diamond exudes timeless beauty.",
         "price": 56.99,
-        "category": "Necklace",
+        "category": 2,
         "rating": 4.6,
         "image": "selene2.jpg"
       }
@@ -137,7 +137,7 @@
         "name": "Double Necklace",
         "description": "Versatile accessory featuring dual strands exudes modern chic and elegance.",
         "price": 69.99,
-        "category": "Necklace",
+        "category": 2,
         "rating": 3,
         "image": "selene3.jpg"
       }
@@ -150,7 +150,7 @@
         "name": "Golden Rose Pearl",
         "description": "Elegant design combines golden hues and lustrous pearls for timeless sophistication.",
         "price": 55.99,
-        "category": "Earring",
+        "category": 1,
         "rating": 4.9,
         "image": "selene4.jpg"
       }
@@ -163,7 +163,7 @@
         "name": "Golden Face",
         "description": "Unique and artistic earrings featuring golden face motif for bold style.",
         "price": 45,
-        "category": "Earring",
+        "category": 1,
         "rating": 4.5,
         "image": "selene5.jpg"
       }
@@ -176,7 +176,7 @@
         "name": "Sun Kissed Spiral",
         "description": "Whimsical spirals shine with golden glow, evoking warmth and elegance.",
         "price": 129.99,
-        "category": "Earring",
+        "category": 1,
         "rating": 5.0,
         "image": "selene6.jpg"
       }
@@ -189,7 +189,7 @@
         "name": "Golden Chain",
         "description": "Classic accessory with a timeless appeal, radiating elegance and sophistication.",
         "price": 110.89,
-        "category": "Necklace",
+        "category": 2,
         "rating": 4.8,
         "image": "selene8.jpg"
       }
@@ -202,7 +202,7 @@
         "name": "Eternal Elegance Set",
         "description": "Matching earrings and rings exude timeless charm and sophisticated allure.",
         "price": 99.99,
-        "category": "Earring, Ring",
+        "category": 3,
         "rating": 5.0,
         "image": "selene10.jpg"
       }
@@ -215,7 +215,7 @@
         "name": "Gilded Serenity",
         "description": "Radiates tranquility and luxury with serene elegance, a timeless beauty.",
         "price": 59.99,
-        "category": "Necklace",
+        "category": 2,
         "rating": 4.4,
         "image": "sephora1.jpg"
       }
@@ -228,7 +228,7 @@
         "name": "Golden Flower Sunshine",
         "description": "A design imbued with radiant golden hues exudes warmth beautifully.",
         "price": 59.99,
-        "category": "Earring",
+        "category": 1,
         "rating": 5.0,
         "image": "selene2.jpg"
       }
@@ -241,7 +241,7 @@
         "name": "Golden Glow Stud",
         "description": "Radiant studs emit a warm glow, exuding timeless elegance effortlessly.",
         "price": 70,
-        "category": "Earring",
+        "category": 1,
         "rating": 5,
         "image": "sephora3.jpg"
       }
@@ -254,7 +254,7 @@
         "name": "Dark Diamond",
         "description": "Mysterious allure emanates from these elegant earrings, capturing sophistication perfectly.",
         "price": 47.89,
-        "category": "Earring",
+        "category": 1,
         "rating": 5.0,
         "image": "sephora4.jpg"
       }
@@ -267,7 +267,7 @@
         "name": "Sunset Mirage",
         "description": " Mirrors the enchanting hues of sunset, exuding warmth and elegance.",
         "price": 60.99,
-        "category": "Necklace",
+        "category": 2,
         "rating": 5.0,
         "image": "sephora5.jpg"
       }
@@ -280,7 +280,7 @@
         "name": "Weeding Diamonds Set",
         "description": "Exquisite set symbolizes eternal love with dazzling diamonds and elegance.",
         "price": 76.99,
-        "category": "Ring",
+        "category": 3,
         "rating": 5,
         "image": "Theia1.jpg"
       }
@@ -293,7 +293,7 @@
         "name": "Shiny Pink Pearl ",
         "description": "Lustrous pearls in rosy hues radiate elegance and feminine charm beautifully.",
         "price": 39.99,
-        "category": "Necklace",
+        "category": 2,
         "rating": 4.8,
         "image": "Theia2.jpg"
       }
@@ -306,7 +306,7 @@
         "name": "Double Neclace Mountain",
         "description": "A unique design featuring dual strands inspired by majestic mountains.",
         "price": 49,
-        "category": "Necklace",
+        "category": 2,
         "rating": 4.8,
         "image": "Theia3.jpg"
       }
@@ -319,7 +319,7 @@
         "name": "Gilded Glamour Teardrop",
         "description": "Elegant teardrop design exudes glamour and sophistication with gilded allure.",
         "price": 106.99,
-        "category": "Earring",
+        "category": 1,
         "rating": 5.0,
         "image": "Theia4.jpg"
       }
@@ -332,7 +332,7 @@
         "name": "Sunset Splendor",
         "description": "Exudes splendor with radiant hues, capturing the beauty of a sunset.",
         "price": 78.99,
-        "category": "Ring",
+        "category": 3,
         "rating": 4.4,
         "image": "Theia5.jpg"
       }
@@ -345,7 +345,7 @@
         "name": "Glimmering Aura",
         "description": "Radiate ethereal glow, embodying celestial charm with captivating, shimmering aura.",
         "price": 338.99,
-        "category": "Earring",
+        "category": 1,
         "rating": 5,
         "image": "lisa1.png"
       }
@@ -358,7 +358,7 @@
         "name": "Sun-Kissed Spiral",
         "description": "Glowing spirals imbued with warmth evoke a sun-kissed allure beautifully.",
         "price": 350,
-        "category": "Earring",
+        "category": 1,
         "rating": 5.0,
         "image": "lisa2.png"
       }
@@ -371,7 +371,7 @@
         "name": "Luminous Gold Leaf",
         "description": "Elegant design inspired by nature radiates with golden luminosity beautifully.",
         "price": 249.99,
-        "category": "Earring",
+        "category": 1,
         "rating": 5.0,
         "image": "lisa3.png"
       }
@@ -384,7 +384,7 @@
         "name": "Dainty Daisy Chain",
         "description": "Delicate chain adorned with daisies exudes charm and timeless elegance.",
         "price": 178.99,
-        "category": "Necklace",
+        "category": 2,
         "rating": 5,
         "image": "lisa4.jpg"
       }
@@ -397,7 +397,7 @@
         "name": "Shimmering Solstice",
         "description": "Captures the essence of a shimmering solstice, radiating elegance beautifully.",
         "price": 150,
-        "category": "Necklace",
+        "category": 2,
         "rating": 5,
         "image": "lisa5.jpg"
       }
@@ -410,8 +410,9 @@
         "name": "Ethereal Eclipse",
         "description": "Radiates mysterious allure, capturing the beauty of an ethereal eclipse.",
         "price": 190,
-        "category": "Necklace",
+        "category": 2,
         "rating": 5,
         "image": "lisa6.jpg"
       }
     }
+  ]

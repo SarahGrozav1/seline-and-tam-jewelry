@@ -110,7 +110,7 @@ body {
 }
 
 
-/* -------------------------------- Media Queries */
+/* --------------- Media Queries --------------- */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -181,5 +181,17 @@ body {
     
     .paragraf {
         font-size: 1rem;
+    }
+}
+
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 140px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }

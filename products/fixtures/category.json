@@ -27,8 +27,8 @@
       "pk": 4,
       "model": "products.category",
       "fields": {
-        "name": "collections",
-        "friendly_name": "Collections"
+        "name": "rings",
+        "friendly_name": "Rings"
       }
     }
   ]

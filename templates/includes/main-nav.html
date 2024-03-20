@@ -5,45 +5,38 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0 " aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products:products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products:products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products:products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="nav-link text-black mr-5 text-uppercase" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+            <a class="nav-link text-black mr-5 text-uppercase" href="{% url 'products:products' %}?category=bracelet" id="jewelry-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Bracelet
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Gold</a>
-                <a href="" class="dropdown-item">Silver</a>
-            </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="nav-link text-black mr-5 text-uppercase" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+            <a class="nav-link text-black mr-5 text-uppercase" href="{% url 'products:products' %}?category=necklace" id="jewelry-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Necklaces
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Gold</a>
-                <a href="" class="dropdown-item">Silver</a>
-            </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="nav-link text-black mr-5 text-uppercase" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+            <a class="nav-link text-black mr-5 text-uppercase" href="{% url 'products:products' %}?category=earing" id="jewelry-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Earings
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Gold</a>
-                <a href="" class="dropdown-item">Silver</a>
-            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-black mr-5 text-uppercase" href="{% url 'products:products' %}?category=ring" id="jewelry-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rings
+            </a>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link text-black text-uppercase" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-black text-uppercase" href="{% url 'products:products' %}?category=collections" id="collections-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Collections
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">

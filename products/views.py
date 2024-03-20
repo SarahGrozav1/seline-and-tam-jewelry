@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
-from .models import Product, Category
+from .models import Product, Category, Collections
 
 # Create your views here.
 
@@ -11,6 +11,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    collections = None
     
     if request.GET:
         if 'sort' in request.GET:
@@ -30,6 +31,11 @@ def all_products(request):
             categories = request.GET['category']
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+            
+        if 'collections' in request.GET:
+            collections = request.GET['collections']
+            products = products.filter(collections__name__in=collections)
+            collections = Collections.objects.filter(name__in=collections)
     
     current_sorting = f'{sort}_{direction}'
     
@@ -37,6 +43,7 @@ def all_products(request):
         'products' : products,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'current_collections': collections,
     }
 
     return render(request, 'products/products.html', context)

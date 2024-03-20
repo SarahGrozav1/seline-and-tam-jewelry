@@ -37,14 +37,15 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link text-black text-uppercase" href="{% url 'products:products' %}?category=collections" id="collections-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-black text-uppercase" href="#" id="collections-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Collections
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Thea Collection</a>
-                <a href="" class="dropdown-item">Sephora Collection</a>
-                <a href="" class="dropdown-item">Dione Collection</a>
-                <a href="" class="dropdown-item">Selene Collection</a>               
+                <a href="{% url 'products:products' %}?collections=theia" class="dropdown-item">Theia Collection</a>
+                <a href="{% url 'products:products' %}?collections=sephora" class="dropdown-item">Sephora Collection</a>
+                <a href="{% url 'products:products' %}?collections=dione" class="dropdown-item">Dione Collection</a>
+                <a href="{% url 'products:products' %}?collections=selene" class="dropdown-item">Selene Collection</a> 
+                <a href="{% url 'products:products' %}?collections=lisa" class="dropdown-item">Lisa Collection</a>               
             </div>
         </li>
     </ul>

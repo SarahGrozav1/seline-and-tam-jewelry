@@ -8,6 +8,7 @@
         "description": "Radiant golden hoops embody celestial charm with elegant, luminous allure.",
         "price": 115,
         "category": 1,
+        "collections": 1,
         "rating": 4.6,
         "image": "dione1.jpg"
       }
@@ -21,6 +22,7 @@
         "description": "Exudes elegance and sophistication with a touch of timeless beauty.",
         "price": 130,
         "category": 2,
+        "collections": 1,
         "rating": 5.0,
         "image": "dione2.jpg"
       }
@@ -34,6 +36,7 @@
         "description": "Spectacular ring dazzles with effervescent charm and timeless elegance.",
         "price": 98.5,
         "category": 3,
+        "collections": 1,
         "rating": 4.8,
         "image": "dione3.jpg"
       }
@@ -47,6 +50,7 @@
         "description": "Radiates tranquility and luxury with a serene and timeless allure.",
         "price": 169.99,
         "category": 2,
+        "collections": 1,
         "rating": 4.4,
         "image": "dione4.jpg"
       }
@@ -60,6 +64,7 @@
         "description": "Mesmerizing piece exuding celestial elegance, capturing moonlit allure beautifully.",
         "price": 156.3,
         "category": 2,
+        "collections": 1,
         "rating": 5,
         "image": "dione5.jpg"
       }
@@ -73,6 +78,7 @@
         "description": "Vibrant charm radiates from this exquisite necklace, capturing nature's beauty.",
         "price": 89.9,
         "category": 2,
+        "collections": 1,
         "rating": 4.7,
         "image": "dione6.jpg"
       }
@@ -86,6 +92,7 @@
         "description": "Elegant design cascades like golden streams, exuding timeless sophistication allure.",
         "price": 165,
         "category": 2,
+        "collections": 1,
         "rating": 5.0,
         "image": "dione7.jpg"
       }
@@ -99,6 +106,7 @@
         "description": "Exquisite earrings radiate opulence and sophistication, embodying chic, glamorous allure.",
         "price": 88.99,
         "category": 1,
+        "collections": 1,
         "rating": 4.7,
         "image": "dione8.jpg"
       }
@@ -112,6 +120,7 @@
         "description": "Captures essence of golden hour, radiating warmth and timeless charm.",
         "price": 75,
         "category": 4,
+        "collections": 3,
         "rating": 4.8,
         "image": "selene1.jpg"
       }
@@ -125,6 +134,7 @@
         "description": "Elegant piece adorned with delicate rose pink diamond exudes timeless beauty.",
         "price": 56.99,
         "category": 2,
+        "collections": 3,
         "rating": 4.6,
         "image": "selene2.jpg"
       }
@@ -138,6 +148,7 @@
         "description": "Versatile accessory featuring dual strands exudes modern chic and elegance.",
         "price": 69.99,
         "category": 2,
+        "collections": 3,
         "rating": 3,
         "image": "selene3.jpg"
       }
@@ -151,6 +162,7 @@
         "description": "Elegant design combines golden hues and lustrous pearls for timeless sophistication.",
         "price": 55.99,
         "category": 1,
+        "collections": 3,
         "rating": 4.9,
         "image": "selene4.jpg"
       }
@@ -164,6 +176,7 @@
         "description": "Unique and artistic earrings featuring golden face motif for bold style.",
         "price": 45,
         "category": 1,
+        "collections": 3,
         "rating": 4.5,
         "image": "selene5.jpg"
       }
@@ -177,6 +190,7 @@
         "description": "Whimsical spirals shine with golden glow, evoking warmth and elegance.",
         "price": 129.99,
         "category": 1,
+        "collections": 3,
         "rating": 5.0,
         "image": "selene6.jpg"
       }
@@ -190,6 +204,7 @@
         "description": "Classic accessory with a timeless appeal, radiating elegance and sophistication.",
         "price": 110.89,
         "category": 2,
+        "collections": 3,
         "rating": 4.8,
         "image": "selene8.jpg"
       }
@@ -203,6 +218,7 @@
         "description": "Matching earrings and rings exude timeless charm and sophisticated allure.",
         "price": 99.99,
         "category": 3,
+        "collections": 3,
         "rating": 5.0,
         "image": "selene10.jpg"
       }
@@ -216,6 +232,7 @@
         "description": "Radiates tranquility and luxury with serene elegance, a timeless beauty.",
         "price": 59.99,
         "category": 2,
+        "collections": 4,
         "rating": 4.4,
         "image": "sephora1.jpg"
       }
@@ -229,6 +246,7 @@
         "description": "A design imbued with radiant golden hues exudes warmth beautifully.",
         "price": 59.99,
         "category": 1,
+        "collections": 4,
         "rating": 5.0,
         "image": "selene2.jpg"
       }
@@ -242,6 +260,7 @@
         "description": "Radiant studs emit a warm glow, exuding timeless elegance effortlessly.",
         "price": 70,
         "category": 1,
+        "collections": 4,
         "rating": 5,
         "image": "sephora3.jpg"
       }
@@ -255,6 +274,7 @@
         "description": "Mysterious allure emanates from these elegant earrings, capturing sophistication perfectly.",
         "price": 47.89,
         "category": 1,
+        "collections": 4,
         "rating": 5.0,
         "image": "sephora4.jpg"
       }
@@ -268,6 +288,7 @@
         "description": " Mirrors the enchanting hues of sunset, exuding warmth and elegance.",
         "price": 60.99,
         "category": 2,
+        "collections": 4,
         "rating": 5.0,
         "image": "sephora5.jpg"
       }
@@ -281,6 +302,7 @@
         "description": "Exquisite set symbolizes eternal love with dazzling diamonds and elegance.",
         "price": 76.99,
         "category": 3,
+        "collections": 5,
         "rating": 5,
         "image": "Theia1.jpg"
       }
@@ -294,6 +316,7 @@
         "description": "Lustrous pearls in rosy hues radiate elegance and feminine charm beautifully.",
         "price": 39.99,
         "category": 2,
+        "collections": 5,
         "rating": 4.8,
         "image": "Theia2.jpg"
       }
@@ -307,6 +330,7 @@
         "description": "A unique design featuring dual strands inspired by majestic mountains.",
         "price": 49,
         "category": 2,
+        "collections": 5,
         "rating": 4.8,
         "image": "Theia3.jpg"
       }
@@ -320,6 +344,7 @@
         "description": "Elegant teardrop design exudes glamour and sophistication with gilded allure.",
         "price": 106.99,
         "category": 1,
+        "collections": 5,
         "rating": 5.0,
         "image": "Theia4.jpg"
       }
@@ -333,6 +358,7 @@
         "description": "Exudes splendor with radiant hues, capturing the beauty of a sunset.",
         "price": 78.99,
         "category": 3,
+        "collections": 5,
         "rating": 4.4,
         "image": "Theia5.jpg"
       }
@@ -346,6 +372,7 @@
         "description": "Radiate ethereal glow, embodying celestial charm with captivating, shimmering aura.",
         "price": 338.99,
         "category": 1,
+        "collections": 2,
         "rating": 5,
         "image": "lisa1.png"
       }
@@ -359,6 +386,7 @@
         "description": "Glowing spirals imbued with warmth evoke a sun-kissed allure beautifully.",
         "price": 350,
         "category": 1,
+        "collections": 2,
         "rating": 5.0,
         "image": "lisa2.png"
       }
@@ -372,6 +400,7 @@
         "description": "Elegant design inspired by nature radiates with golden luminosity beautifully.",
         "price": 249.99,
         "category": 1,
+        "collections": 2,
         "rating": 5.0,
         "image": "lisa3.png"
       }
@@ -385,6 +414,7 @@
         "description": "Delicate chain adorned with daisies exudes charm and timeless elegance.",
         "price": 178.99,
         "category": 2,
+        "collections": 2,
         "rating": 5,
         "image": "lisa4.jpg"
       }
@@ -398,6 +428,7 @@
         "description": "Captures the essence of a shimmering solstice, radiating elegance beautifully.",
         "price": 150,
         "category": 2,
+        "collections": 2,
         "rating": 5,
         "image": "lisa5.jpg"
       }
@@ -411,6 +442,7 @@
         "description": "Radiates mysterious allure, capturing the beauty of an ethereal eclipse.",
         "price": 190,
         "category": 2,
+        "collections": 2,
         "rating": 5,
         "image": "lisa6.jpg"
       }

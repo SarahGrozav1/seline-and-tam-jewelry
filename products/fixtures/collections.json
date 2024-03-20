@@ -1,0 +1,42 @@
+[
+    {
+      "pk": 1,
+      "model": "products.collections",
+      "fields": {
+        "name": "dione",
+        "friendly_name": "Dione"
+      }
+    },
+    {
+        "pk": 2,
+        "model": "products.collections",
+        "fields": {
+          "name": "lisa",
+          "friendly_name": "Lisa"
+        }
+      },
+      {
+        "pk": 3,
+        "model": "products.collections",
+        "fields": {
+          "name": "selene",
+          "friendly_name": "Selene"
+        }
+      },
+      {
+        "pk": 4,
+        "model": "products.collections",
+        "fields": {
+          "name": "sephora",
+          "friendly_name": "Sephora"
+        }
+      },
+      {
+        "pk": 5,
+        "model": "products.collections",
+        "fields": {
+          "name": "theia",
+          "friendly_name": "Theia"
+        }
+      }
+]

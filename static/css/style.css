@@ -37,13 +37,12 @@ body {
     background: rgba(255, 255, 255, 0.445);
     color: rgb(0, 0, 0);
     padding: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
     font-size: 1.2rem;
     border: 1px solid black;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -109,7 +108,32 @@ body {
 	z-index: -1;
 }
 
+/* Detail product */
 
+.add-to-bag {
+    background: black;
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    border: 1px solid black;
+}
+
+.add-to-bag:hover {
+    background: rgba(255, 255, 255, 0.445);
+    color: rgb(0, 0, 0); 
+}
+
+.keep-shp {
+    font-family: Fira Sans, sans-serif;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.keep-shp:hover {
+    background: black;
+    color: white;
+}
 
 
 /* --------------- Media Queries --------------- */

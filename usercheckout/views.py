@@ -35,7 +35,7 @@ def usercheckout(request):
     if request.method == 'POST':
         shpbag = request.session.get('shpbag', {})
         
-       form_data = {
+    form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
             'phone_number': request.POST['phone_number'],
@@ -46,9 +46,12 @@ def usercheckout(request):
             'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
         }
-        order_form = OrderForm(form_data)
-        if order_form.is_valid():
-            order = order_form.save()
+    order_form = OrderForm(form_data)
+    if order_form.is_valid():
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.original_bag = json.dumps(bag)
+            order.save()
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)

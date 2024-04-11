@@ -47,10 +47,10 @@
                                     <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">${{ item.product.price }}</p>
+                                    <p class="my-0">${{ item.product.price }}</p>products
                                 </td>
                                 <td class="py-3 w-25">
-                                    <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+                                    <form class="form update-form" method="GET" action="{% url 'shpbag:adjust_bag' item.item_id %}">
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
@@ -72,9 +72,6 @@
                                                         </span>
                                                     </button>
                                                 </div>
-                                                {% if item.product.has_sizes %}
-                                                    <input type="hidden" name="product_size" value="{{ item.size }}">
-                                                {% endif %}
                                             </div>
                                         </div>
                                     </form>
@@ -95,7 +92,7 @@
                         </tr>
                         <tr>
                             <td colspan="5" class="text-right">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                <a href="{% url 'products:products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>

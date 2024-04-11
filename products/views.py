@@ -29,13 +29,13 @@ def all_products(request):
         
         if 'category' in request.GET:
             categories = request.GET['category']
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            products = Product.objects.filter(category__name=categories)
+            categories = Category.objects.filter(name=categories)
             
         if 'collections' in request.GET:
             collections = request.GET['collections']
-            products = products.filter(collections__name__in=collections)
-            collections = Collections.objects.filter(name__in=collections)
+            products = Product.objects.filter(collections__name=collections)
+            collections = Collections.objects.filter(name=collections)
     
     current_sorting = f'{sort}_{direction}'
     

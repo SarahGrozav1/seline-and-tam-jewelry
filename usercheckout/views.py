@@ -5,7 +5,7 @@ from django.conf import settings
 
 from .forms import OrderForm
 from shpbag.contexts import shpbag_contents
-# from products.models import OrderLineItem
+from .models import Order, OrderLineItem
 from products.models import Product
 
 import stripe
@@ -83,7 +83,7 @@ def usercheckout(request):
                         "Please call us for assistance!")
                     )
                     order.delete()
-                    return redirect(reverse('view_bag'))
+                    return redirect(reverse('shp_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))

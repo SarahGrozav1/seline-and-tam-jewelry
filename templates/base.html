@@ -58,7 +58,7 @@
                                 {% if request.user.is_superuser %}
                                     <a href="" class="dropdown-item">Product Management</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'profiles:profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -123,6 +123,25 @@
         $('.toast').toast('show');
     </script>
     {% endblock %}
+
+     <!-- FOOTER -->
+
+   <footer>
+    <div class="container">
+      <div class="row">
+        <hr>
+        <div class="col-lg-12 text-center p-4">
+          <i class="fa-brands fa-facebook me-4" style="color: #000000;"></i>
+          <i class="fa-brands fa-square-instagram me-4" style="color: #000000;"></i>
+          <i class="fa-brands fa-square-twitter me-4" style="color: #000000;"></i>
+          <i class="fa-brands fa-tiktok" style="color: #000000;"></i>
+        </div>
+        <div class="col-lg-12 text-center">
+          <p>© 2023 Seline & Tam Jewellery - This website it's made for educational purposes.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     
   </body>

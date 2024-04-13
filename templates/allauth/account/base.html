@@ -1,1 +1,26 @@
 {% extends "base.html" %}
+
+{% block content %}
+
+<style>
+
+.header-container{
+    background-color: #dbd7d2;
+    margin-top: 160px;
+    height: 80vh;
+}
+
+</style>
+
+    <div class="container header-container">
+        <div class="overlay"></div>
+        <div class="row">
+            <div class="col-6">
+                <div class="allauth-form-inner-content">
+                    {% block inner_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

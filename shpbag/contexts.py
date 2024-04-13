@@ -32,8 +32,8 @@ def shpbag_contents(request):
                 })
 
 
-        delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
-        grand_total = delivery + total
+    delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
+    grand_total = delivery + total
     
     context = {
         'bag_items': bag_items,

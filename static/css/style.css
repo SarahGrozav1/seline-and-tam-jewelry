@@ -154,6 +154,10 @@ body {
     overflow: visible;
 }
 
+.test-toast {
+    opacity: 1 !important;
+}
+
 .toast-capper{
     height: 2px;
 }

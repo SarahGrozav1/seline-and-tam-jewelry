@@ -1,0 +1,1 @@
+Seline & Tam Jewelry Confirmation for Order Number {{ order.order_number }}

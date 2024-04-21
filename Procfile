@@ -1,0 +1,1 @@
+web: gunicorn seline-and-tam-jewelry.wsgi:application

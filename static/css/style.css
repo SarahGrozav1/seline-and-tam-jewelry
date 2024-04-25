@@ -148,6 +148,10 @@ body {
     z-index: 99999999999;
 }
 
+.increment-qty, .decrement-qty {
+    padding: .25rem .5rem !important;
+}
+
 /* Toasts */
 
 

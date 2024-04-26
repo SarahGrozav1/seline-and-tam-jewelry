@@ -96,6 +96,37 @@ body {
     font-size: 2rem;
 }
 
+/* About Section */
+
+#about {
+    position: relative important;
+    background: #f1e9e4;
+    overflow: hidden;
+}
+
+/* curve from shapedivider.ap */
+
+.custom-shape-divider-bottom-1714144216 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1714144216 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 448px;
+}
+
+.custom-shape-divider-bottom-1714144216 .shape-fill {
+    fill: #D6CFCB;
+}
+
+
 /* Products main page */
 
 .overlay {
@@ -106,6 +137,11 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+.card {
+    font-family: Playfair Display, sans-serif;
+    box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.623);
 }
 
 /* Detail product */

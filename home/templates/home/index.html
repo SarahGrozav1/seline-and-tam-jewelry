@@ -116,8 +116,92 @@
     </div>
   </section>
 
+<!-- THEA COLLECTION section -->
+
+<section class="thea-collection">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">Theia Collection</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 mb-3">
+        <div class="product-box">
+          <div class="product-inner-box position-relative">
+            <div class="icons position-absolute">
+              <a href="#" class="text-decoration-none text-dark"><i class="fas fa-heart"></i></a>
+              <a href="#" class="text-decoration-none text-dark"><i class="fas fa-eye "></i></a>
+            </div>
+            <img src="{% static 'media/lisa1.png' %}" alt="earings" class="img-fluid">
+            <div class="cart-btn">
+              <button class="btn btn-white shadow-sm rounded-pill"><i class="fas fa-shopping-cart"></i> Add to
+                Cart</button>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-name">
+              Glimmering Aura  
+            </div>
+            <span class="product-price">$ 338.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 mb-3">
+        <div class="product-box">
+          <div class="product-inner-box position-relative">
+            <div class="icons position-absolute">
+              <a href="#" class="text-decoration-none text-dark"><i class="fas fa-heart"></i></a>
+              <a href="#" class="text-decoration-none text-dark"><i class="fas fa-eye "></i></a>
+            </div>
+            <img src="{% static 'media/lisa2.png' %}" alt="earings" class="img-fluid">
+            <div class="cart-btn">
+              <button class="btn btn-white shadow-sm rounded-pill"><i class="fas fa-shopping-cart"></i> Add to
+                Cart</button>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-name">
+              Sun-Kissed Spiral 
+            </div>
+            <span class="product-price">$ 350</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 mb-3">
+        <div class="product-box">
+          <div class="product-inner-box position-relative">
+            <div class="icons position-absolute">
+              <a href="#" class="text-decoration-none text-dark"><i class="fas fa-heart"></i></a>
+              <a href="#" class="text-decoration-none text-dark"><i class="fas fa-eye "></i></a>
+            </div>
+            <img src="{% static 'media/lisa3.png' %}" alt="earings" class="img-fluid">
+            <div class="cart-btn">
+              <button class="btn btn-white shadow-sm rounded-pill"><i class="fas fa-shopping-cart"></i> Add to
+                Cart</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">
+              Luminous Gold Leaf 
+            </div> 
+            <span class="product-price">$ 249.99</span>     
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-black mt-5">See More >> </a>
+
+    </div>
+  </div>
+</section>
+
+
 {% endblock %}
 
 {% block postloadjs %}
     <script type="text/javascript" src="{% static 'js/clock.js' %}"></script>
-{% endblock %}
+    <script type="text/javascript" src="{% static 'js/cards.js' %}"></script>
+
+    {% endblock %}

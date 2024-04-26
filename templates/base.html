@@ -99,13 +99,13 @@
             {% for message in messages %}
             {% with message.level as level %}
             {% if level == 40 %}
-                {% include '/workspace/seline-and-tam-jewelry/templates/includes/toasts/toast-error.html' %}
+                {% include 'includes/toasts/toast-error.html' %}
             {% elif level == 30 %}
-                {% include '/workspace/seline-and-tam-jewelry/templates/includes/toasts/toast-warning.html' %}
+                {% include 'includes/toasts/toast-warning.html' %}
             {% elif level == 25 %}
-                {% include '/workspace/seline-and-tam-jewelry/templates/includes/toasts/toast-success.html' %}
+                {% include 'includes/toasts/toast-success.html' %}
             {% else %}
-                {% include '/workspace/seline-and-tam-jewelry/templates/includes/toasts/toast-info.html' %}
+                {% include 'includes/toasts/toast-info.html' %}
             {% endif %}
         {% endwith %}
             {% endfor %}

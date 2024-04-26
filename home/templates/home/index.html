@@ -82,7 +82,7 @@
   <!-- Upcoming Collection Section -->
 
    <section class="upcoming-collection">
-    <div class="masthead background-image" style="background-image: url({% static 'media/drop-earring.png' %});">
+    <div class="masthead background-image" style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/drop-earring.png');">
       <div class="up-coll container-fluid ">
         <div class="centered row">
           <div class="col-lg-4 text-center">
@@ -118,7 +118,7 @@
 
 <!-- THEA COLLECTION section -->
 
-<section class="thea-collection">
+<section class="theia-collection">
   <div class="container">
     <div class="row">
       <h1 class="text-center">Theia Collection</h1>
@@ -133,8 +133,8 @@
             </div>
             <img src="{% static 'media/lisa1.png' %}" alt="earings" class="img-fluid">
             <div class="cart-btn">
-              <button class="btn btn-white shadow-sm rounded-pill"><i class="fas fa-shopping-cart"></i> Add to
-                Cart</button>
+              <button class="btn btn-white shadow-sm rounded-pill" type="submit"><i class="fas fa-shopping-cart"></i> Add 
+                Product</button>
             </div>
           </div>
 
@@ -191,7 +191,7 @@
           </div>
         </div>
       </div>
-      <a href="#" class="btn btn-black mt-5">See More >> </a>
+      <a href="{% url 'products:products' %}?collections=lisa" class="btn btn-black mt-5 post-midle">See More >> </a>
 
     </div>
   </div>

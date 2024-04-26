@@ -4,19 +4,19 @@
 {% block content %}
 
   <!-- HOME Section -->
-    <section id="home">
+    <section id="home">     
       <div class="masthead" style="background-image: url('media/necklace-white-shirt.png')">
         <div class="color-overlay d-flex justify-content-center align-items-center text-center">
           <h1 class="title1">Your dream in</h1>
           <h1 class="title2"><i>jewelry</i> form</h1>
           <p class="paragraf pt-5">New Summer Collection!</p>
           <a href="{% url 'products:products' %}" class="btn btn-black mt-5">Shop Now</a>
-        </div>
-      </div>
+        </div> 
+      </div>   
     </section>
 
     <!-- About Section -->
-    
+
     <div style="position: relative;">
     <div class="custom-shape-divider-bottom-1714144216">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -79,4 +79,45 @@
   </div>
   </section>
 
+  <!-- Upcoming Collection Section -->
+
+   <section class="upcoming-collection">
+    <div class="masthead background-image" style="background-image: url({% static 'media/drop-earring.png' %});">
+      <div class="up-coll container-fluid ">
+        <div class="centered row">
+          <div class="col-lg-4 text-center">
+            <h2>Upcoming Collection</h2>
+            <h5>in</h5>
+            <h3>- 01.12.2024 -</h3>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="countdown text-center">
+              <div>
+                <p id="days">00</p>
+                <span>Days</span>
+              </div>
+              <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+              </div>
+              <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+              </div>
+              <div>
+                <p id="seconds">00</p>
+                <span>Seconds</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
+
+{% block postloadjs %}
+    <script type="text/javascript" src="{% static 'js/clock.js' %}"></script>
 {% endblock %}

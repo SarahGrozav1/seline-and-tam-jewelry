@@ -352,11 +352,51 @@ body {
 
 /* --------------- Media Queries --------------- */
 
+@media only screen and (max-width: 1468px) {
+
+    .up-coll h2 {
+        font-size: 80px;
+    }
+
+    .up-coll h3 {
+        font-size: 60px;
+    }
+
+    .up-coll h5 {
+        font-size: 40px;
+
+    }
+
+    .countdown div p {
+        font-size: 50px;
+    } 
+}
+
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
+}
+
+@media only screen and (max-width: 1128px) {
+
+    .up-coll h2 {
+        font-size: 60px;
+    }
+
+    .up-coll h3 {
+        font-size: 50px;
+    }
+
+    .up-coll h5 {
+        font-size: 30px;
+
+    }
+
+    .countdown div p {
+        font-size: 40px;
+    } 
 }
 
 /* fixed top navbar only on medium and up */
@@ -371,6 +411,21 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 140px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .countdown div {
+        margin-top: 130px;
     }
 }
 
@@ -413,6 +468,36 @@ body {
     }
 }
 
+@media only screen and (max-width: 504px) {
+
+    .countdown div p {
+        font-size: 25px;
+    }
+
+    .countdown div span {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 358px) {
+
+    .up-coll h2 {
+        font-size: 50px;
+    }
+
+    .up-coll h3 {
+        font-size: 40px;
+    }
+
+    .up-coll h5 {
+        font-size: 20px;
+    }
+
+    .countdown {
+        visibility: hidden; 
+    }
+}
+
 @media (max-width: 320px) {
 
     .title1 {
@@ -429,13 +514,9 @@ body {
 }
 
 
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 140px;
-    }
 
-    body {
-        height: calc(100vh - 116px);
-    }
-}
+
+
+
+
+

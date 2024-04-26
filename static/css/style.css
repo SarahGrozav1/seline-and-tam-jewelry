@@ -351,6 +351,10 @@ body {
         padding: 20px;
         font-size: 1rem;
     }
+
+    .custom-shape-divider-bottom-1714144216 {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 576px) {

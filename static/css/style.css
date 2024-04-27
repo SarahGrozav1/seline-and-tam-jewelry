@@ -171,13 +171,13 @@ body {
 
 .theia-collection {
     background: #d6cfcb;
-    font-family: Playfair Display, sans-serif;
 }
 
 .theia-collection h1 {
     margin-top: 100px;
     margin-bottom: 100px;
     font-size: 4rem;
+    text-align: center;
 }
 
 .product-inner-box .icons {
@@ -266,6 +266,8 @@ body {
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
+    font-family: Fira Sans, sans-serif;
+
 }
 
 .product-price {
@@ -283,6 +285,55 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 60px;
+}
+
+/* Our Promise section */
+
+#promise {
+    background: #e2dede;
+    text-align: center;
+    position: relative;
+}
+
+#promise h1 {
+    padding-top: 200px;
+    padding-bottom: 80px;
+    font-family: Fira Sans, sans-serif;
+}
+
+#promise .icon {
+    padding-bottom: 80px;
+}
+
+#promise .big {
+    font-size: 5rem;
+}
+
+#promise h5 {
+    font-size: 2rem;
+}
+
+/* Shape divider */
+
+.custom-shape-divider-top-1714220031 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1714220031 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 121px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1714220031 .shape-fill {
+    fill: #D6CFCB;
 }
 
 /* Products main page */

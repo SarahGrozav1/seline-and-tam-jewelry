@@ -38,3 +38,4 @@ class Collections(models.Model):
 
     def get_frienfly_name(self):
         return self.friendly_name
+    

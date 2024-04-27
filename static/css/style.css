@@ -290,7 +290,6 @@ body {
 /* Our Promise section */
 
 #promise {
-    background: #e2dede;
     text-align: center;
     position: relative;
 }
@@ -334,6 +333,50 @@ body {
 
 .custom-shape-divider-top-1714220031 .shape-fill {
     fill: #D6CFCB;
+}
+
+/* Contact section */
+
+#contact {
+    position: relative;
+    font-family: Playfair Display, sans-serif;
+    background: #d6cfcb;
+}
+
+#contact .bg-image {
+    height: 80vh;  
+    justify-content: center;
+    object-fit: cover;
+}
+
+#contact h4 {
+    margin-top: 70px;
+}
+
+#contact h5 {
+    margin-bottom: 70px;
+}
+
+/* shape divider */
+.custom-shape-divider-top-1714221927 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1714221927 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 121px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1714221927 .shape-fill {
+    fill: #F1EEE9;
 }
 
 /* Products main page */
@@ -540,6 +583,7 @@ body {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
+
   .container {
     max-width: 80%;
   }
@@ -567,6 +611,7 @@ body {
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
+
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
@@ -582,6 +627,7 @@ body {
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
+
     .header-container {
         padding-top: 140px;
     }
@@ -615,6 +661,10 @@ body {
     }
 
     .custom-shape-divider-bottom-1714144216 {
+        visibility: hidden;
+    }
+
+    .custom-shape-divider-top-1714220031 {
         visibility: hidden;
     }
 }

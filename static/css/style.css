@@ -170,14 +170,15 @@ body {
 /* THEA COLLECTION On Sale section */
 
 .theia-collection {
-    background: #d6cfcb;
+    background: #D6CFCB;
+    
 }
 
-.theia-collection h1 {
+.theia-collection h2 {
     margin-top: 100px;
     margin-bottom: 100px;
     font-size: 4rem;
-    text-align: center;
+    font-family: Playfair Display, sans-serif;
 }
 
 .product-inner-box .icons {
@@ -292,12 +293,13 @@ body {
 #promise {
     text-align: center;
     position: relative;
+    font-family: Fira Sans, sans-serif;
 }
 
-#promise h1 {
+#promise h2 {
     padding-top: 200px;
-    padding-bottom: 80px;
-    font-family: Fira Sans, sans-serif;
+    padding-bottom: 80px; 
+    font-size: 5rem;
 }
 
 #promise .icon {
@@ -349,10 +351,6 @@ body {
     object-fit: cover;
 }
 
-#contact a {
-    color: white;
-}
-
 #contact h4 {
     margin-top: 70px;
 }
@@ -369,6 +367,7 @@ body {
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    z-index: 1;
 }
 
 .custom-shape-divider-top-1714221927 svg {
@@ -385,6 +384,54 @@ body {
 
 /* Reviews Section */
 
+#review {
+    position: relative;
+    font-family: Playfair Display, sans-serif;
+}
+
+#review h3 {
+    margin-top: 75px;
+    font-size: 2rem;
+}
+
+.rate > input {
+    display: none;
+}
+
+.rate {
+    display: inline-block;
+    border: 0;
+}
+
+.rate > label { 
+    float: right;
+}
+
+/* showing the stars */
+.rate > label:before{
+    display: inline-block;
+    font-size: 2rem;
+    font-family: FontAwesome;
+    content: "\f005";
+    margin: 0;
+    padding: 0.3rem .2rem;
+    cursor: pointer;
+}
+
+/* click and hover */
+input:checked ~ label, label:hover ~ label {
+    color: #ffb503;
+}
+
+/* hover highlight */
+input:checked + label:hover, input:checked ~ label:hover,input:checked ~ label:hover ~label,
+label:hover ~ input:checked ~label {
+    color: #cc9000;
+}
+
+#review p {
+    font-size: 1.5rem;
+}
 
 
 /* Products main page */

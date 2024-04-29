@@ -3,125 +3,129 @@
 
 {% block content %}
 
-  <!-- HOME Section -->
-    <section id="home">     
-      <div class="masthead" style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/necklace-white-shirt.png')">
-        <div class="color-overlay d-flex justify-content-center align-items-center text-center">
-          <h1 class="title1">Your dream in</h1>
-          <h1 class="title2"><i>jewelry</i> form</h1>
-          <p class="paragraf pt-5">New Summer Collection!</p>
-          <a href="{% url 'products:products' %}" class="btn btn-black mt-5">Shop Now</a>
-        </div> 
-      </div>   
-    </section>
+<!-- HOME Section -->
+<section id="home">
+  <div class="masthead"
+    style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/necklace-white-shirt.png')">
+    <div class="color-overlay d-flex justify-content-center align-items-center text-center">
+      <h1 class="title1">Your dream in</h1>
+      <h1 class="title2"><i>jewelry</i> form</h1>
+      <p class="paragraf pt-5">New Summer Collection!</p>
+      <a href="{% url 'products:products' %}" class="btn btn-black mt-5">Shop Now</a>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
+<!-- About Section -->
 
-    <div style="position: relative;">
-    <div class="custom-shape-divider-bottom-1714144216">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-      </svg>
+<div style="position: relative;">
+  <div class="custom-shape-divider-bottom-1714144216">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+        class="shape-fill"></path>
+    </svg>
   </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card mt-5 mb-5">
-            <img src="{% static 'media/bg1.jpg' %}" alt="hand with jewellery" class="card-img-top">
-            <div class="card-body">
-              <h2 class="card-title">SUSTAINABLY SOURCED</h2>
-              <p class="card-text">Sustainable sourcing in the world of jewellery is gaining momentum as consumers
-                prioritize ethical
-                and environmentally responsible products. The industry is making strides towards minimizing the
-                environmental impact of mining, promoting fair trade practices, and empowering local communities.
-                Initiatives such as certification programs and traceability systems contribute to greater
-                transparency and accountability. By supporting sustainable jewellery brands, consumers can make a
-                meaningful difference.</p>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mt-5 mb-5">
+          <img src="{% static 'media/bg1.jpg' %}" alt="hand with jewellery" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">SUSTAINABLY SOURCED</h2>
+            <p class="card-text">Sustainable sourcing in the world of jewellery is gaining momentum as consumers
+              prioritize ethical
+              and environmentally responsible products. The industry is making strides towards minimizing the
+              environmental impact of mining, promoting fair trade practices, and empowering local communities.
+              Initiatives such as certification programs and traceability systems contribute to greater
+              transparency and accountability. By supporting sustainable jewellery brands, consumers can make a
+              meaningful difference.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card mt-5 mb-5">
-            <img src="{% static 'media/bg3.jpg' %}" alt="lady with necklace" class="card-img-top">
-            <div class="card-body">
-              <h2 class="card-title">ETHICALLY CRAFTED</h2>
-              <p class="card-text">Ethical craftsmanship in the world of jewellery is an essential movement that
-                ensures fair treatment
-                of workers, responsible sourcing of materials, and sustainable production practices. By supporting
-                ethical jewellery brands, consumers have the power to drive positive change in the industry and
-                contribute to a more sustainable and equitable world. Ethical craftsmanship adds value not only to
-                the jewellery itself but also to the stories behind each piece, creating a meaningful connection
-                between the wearer, the artisans, and the environment.</p>
-            </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mt-5 mb-5">
+          <img src="{% static 'media/bg3.jpg' %}" alt="lady with necklace" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">ETHICALLY CRAFTED</h2>
+            <p class="card-text">Ethical craftsmanship in the world of jewellery is an essential movement that
+              ensures fair treatment
+              of workers, responsible sourcing of materials, and sustainable production practices. By supporting
+              ethical jewellery brands, consumers have the power to drive positive change in the industry and
+              contribute to a more sustainable and equitable world. Ethical craftsmanship adds value not only to
+              the jewellery itself but also to the stories behind each piece, creating a meaningful connection
+              between the wearer, the artisans, and the environment.</p>
           </div>
         </div>
+      </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card mt-5 mb-5">
-            <img src="{% static 'media/bg8.jpg' %}" alt="hand with jewellery" class="card-img-top">
-            <div class="card-body">
-              <h2 class="card-title">JEWELLERY CREATION </h2>
-              <p class="card-text">Jewellery is crafted through a meticulous process.
-                Inspired by various sources, a designer sketches the desired piece.
-                Material selection is crucial, from precious metals to gemstones.
-                Through casting, shaping, and finishing techniques, the metal is
-                transformed into the desired form. Gemstones are cut, polished,
-                and securely set to enhance the piece's beauty. Finishing touches
-                such as polishing and additional techniques like engraving or plating
-                are applied. Quality control ensures the piece meets high standards.</p>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card mt-5 mb-5">
+          <img src="{% static 'media/bg8.jpg' %}" alt="hand with jewellery" class="card-img-top">
+          <div class="card-body">
+            <h2 class="card-title">JEWELLERY CREATION </h2>
+            <p class="card-text">Jewellery is crafted through a meticulous process.
+              Inspired by various sources, a designer sketches the desired piece.
+              Material selection is crucial, from precious metals to gemstones.
+              Through casting, shaping, and finishing techniques, the metal is
+              transformed into the desired form. Gemstones are cut, polished,
+              and securely set to enhance the piece's beauty. Finishing touches
+              such as polishing and additional techniques like engraving or plating
+              are applied. Quality control ensures the piece meets high standards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Upcoming Collection Section -->
+
+<section class="upcoming-collection">
+  <div class="masthead background-image"
+    style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/drop-earring.png');">
+    <div class="up-coll container-fluid ">
+      <div class="centered row">
+        <div class="col-lg-4 text-center">
+          <h2>Upcoming Collection</h2>
+          <h5>in</h5>
+          <h3>- 01.12.2024 -</h3>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="countdown text-center">
+            <div>
+              <p id="days">00</p>
+              <span>Days</span>
+            </div>
+            <div>
+              <p id="hours">00</p>
+              <span>Hours</span>
+            </div>
+            <div>
+              <p id="minutes">00</p>
+              <span>Minutes</span>
+            </div>
+            <div>
+              <p id="seconds">00</p>
+              <span>Seconds</span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </section>
-
-  <!-- Upcoming Collection Section -->
-
-   <section class="upcoming-collection">
-    <div class="masthead background-image" style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/drop-earring.png');">
-      <div class="up-coll container-fluid ">
-        <div class="centered row">
-          <div class="col-lg-4 text-center">
-            <h2>Upcoming Collection</h2>
-            <h5>in</h5>
-            <h3>- 01.12.2024 -</h3>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="countdown text-center">
-              <div>
-                <p id="days">00</p>
-                <span>Days</span>
-              </div>
-              <div>
-                <p id="hours">00</p>
-                <span>Hours</span>
-              </div>
-              <div>
-                <p id="minutes">00</p>
-                <span>Minutes</span>
-              </div>
-              <div>
-                <p id="seconds">00</p>
-                <span>Seconds</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+</section>
 
 <!-- THEA COLLECTION section -->
 
 <section class="theia-collection">
   <div class="container">
-    <div class="row">
-      <h1 class="text-center">Theia Collection</h1>
+    <div class="row justify-content-center align-items-center">
+      <h2>Theia Collection</h2>
     </div>
     <div class="row">
       <div class="col-lg-4 col-md-4 mb-3">
@@ -133,14 +137,15 @@
             </div>
             <img src="{% static 'media/lisa1.png' %}" alt="earings" class="img-fluid">
             <div class="cart-btn">
-              <button class="btn btn-white shadow-sm rounded-pill" type="submit"><i class="fas fa-shopping-cart"></i> Add 
+              <button class="btn btn-white shadow-sm rounded-pill" type="submit"><i class="fas fa-shopping-cart"></i>
+                Add
                 Product</button>
             </div>
           </div>
 
           <div class="product-info">
             <div class="product-name">
-              Glimmering Aura  
+              Glimmering Aura
             </div>
             <span class="product-price">$ 338.99</span>
           </div>
@@ -163,7 +168,7 @@
 
           <div class="product-info">
             <div class="product-name">
-              Sun-Kissed Spiral 
+              Sun-Kissed Spiral
             </div>
             <span class="product-price">$ 350</span>
           </div>
@@ -185,30 +190,35 @@
           </div>
           <div class="product-info">
             <div class="product-name">
-              Luminous Gold Leaf 
-            </div> 
-            <span class="product-price">$ 249.99</span>     
+              Luminous Gold Leaf
+            </div>
+            <span class="product-price">$ 249.99</span>
           </div>
         </div>
       </div>
       <a href="{% url 'products:products' %}?collections=lisa" class="btn btn-black mt-5 post-midle">See More >> </a>
-
     </div>
   </div>
 </section>
 
- <!-- OUR PROMISE section -->
+<!-- OUR PROMISE section -->
 
- <section id="promise">
+<section id="promise">
   <div class="custom-shape-divider-top-1714220031">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      <path
+        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+        opacity=".25" class="shape-fill"></path>
+      <path
+        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+        opacity=".5" class="shape-fill"></path>
+      <path
+        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+        class="shape-fill"></path>
     </svg>
-</div>
+  </div>
   <div>
-    <h1 class="display-3"> Our Promise </h1>
+    <h2> Our Promise </h2>
   </div>
   <div class="container">
     <div class="row mt-5 pb-5 ">
@@ -256,11 +266,17 @@
     <!--curve-->
     <div class="custom-shape-divider-top-1714221927">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25" class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5" class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
       </svg>
-  </div>
+    </div>
     <!--curve ends here-->
     <div class="col-md-12">
       <div class="bg-image d-flex">
@@ -274,7 +290,7 @@
 
       <div class="col-xl-3 col-md-4 col-sm-12  text-start">
         <h6 class=" mt-5 pb-2">SELINE & TAM</h6>
-        <a href="#" class="h2">Contact Us Here</a>
+        <a href="#" class="h2 btn btn-black my-5">Send a message</a>
       </div>
 
       <div class="col-xl-3 col-md-6 col-sm-12">
@@ -292,57 +308,18 @@
         <h5>(123) 456 7890</h5>
       </div>
 
-      
+
     </div>
   </div>
 </section>
 
-<!-- Review Section -->
 
-<section id="review">
-  <div class="row">
-    <div class="col-md-9">
-      <h3>Write Your Review</h3>
-
-      <form action="" method="POST">
-        {% csrf_token %}
-        
-        <div>
-          <!-- Rating stars -->
-          <label>Rate our website</label>
-          <br>
-          <div class="rate">
-            <input type="radio" name="rating" id="rating10" value="5" required><label for="rating10" title="5"></label>
-            <input type="radio" name="rating" id="rating9" value="4.5" required><label for="rating9" title="4.5" class="half"></label>
-            <input type="radio" name="rating" id="rating8" value="4" required><label for="rating8" title="4"></label>
-            <input type="radio" name="rating" id="rating7" value="3.5" required><label for="rating7" title="3.5" class="half"></label>
-            <input type="radio" name="rating" id="rating6" value="3" required><label for="rating6" title="3"></label>
-            <input type="radio" name="rating" id="rating5" value="2.5" required><label for="rating5" title="2.5" class="half"></label>
-            <input type="radio" name="rating" id="rating4" value="2" required><label for="rating4" title="2"></label>
-            <input type="radio" name="rating" id="rating3" value="1.5" required><label for="rating3" title="1.5" class="half"></label>
-            <input type="radio" name="rating" id="rating2" value="1" required><label for="rating2" title="1"></label>
-            <input type="radio" name="rating" id="rating1" value="0.5" required><label for="rating1" title="0.5" class="half"></label>
-          </div>
-
-          Review Title:
-          <input type="text" class="form-control" name="subject">
-          <br>
-          Review:
-          <textarea name="review" id="" rows="4"  class="form-control"></textarea>
-          <br>
-          <input type="submit" value="Submit Review" class="btn btn-black mt-5 post-midle">
-        </div>
-      </form>
-      <br>
-    </div>
-  </div>
-</section>
 
 
 {% endblock %}
 
 {% block postloadjs %}
-    <script type="text/javascript" src="{% static 'js/clock.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/cards.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/clock.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/cards.js' %}"></script>
 
-    {% endblock %}
+{% endblock %}

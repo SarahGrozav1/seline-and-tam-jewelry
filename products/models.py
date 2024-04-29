@@ -1,4 +1,5 @@
 from django.db import models
+from profiles.models import UserProfile
 
 # Create your models here.
 
@@ -38,4 +39,15 @@ class Collections(models.Model):
 
     def get_frienfly_name(self):
         return self.friendly_name
+    
+    
+class ReviewRating(models.Model):
+    user = models.ForeignKey(UserProfile, models.CASCADE)
+    product = models.ForeignKey(Product, models.CASCADE)
+    comment = models.TextField(max_length=300) 
+    rating = models.IntegerField(default=0)
+    created_on = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return str(self.id)
     

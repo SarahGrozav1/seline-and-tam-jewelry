@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<section id="contact-form">
+    <h2 class="fcontact">Contact Us</h2>
+    <br>
+    <div class="container text-center">
+        <form class="" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+
+                <input name="name" type="text" class="form-control" id="fname" placeholder="Name" required>
+                <br>
+                <input name="email" type="email" class="form-control" id="femail" aria-describedby="emailHelp"
+                    placeholder="Enter email" required>
+                <br>
+                <textarea name="subject" id="subject" cols="30" rows="5" class="form-control" placeholder="Subject" required></textarea>
+                <br>
+                <button type="submit" class="h2 btn btn-black">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

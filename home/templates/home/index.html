@@ -160,8 +160,9 @@
             </div>
             <img src="{% static 'media/lisa2.png' %}" alt="earings" class="img-fluid">
             <div class="cart-btn">
-              <button class="btn btn-white shadow-sm rounded-pill"><i class="fas fa-shopping-cart"></i> Add to
-                Cart</button>
+              <i class="fas fa-shopping-cart"></i>
+               <input type="submit" class="btn btn-white shadow-sm rounded-pill"
+                           value="Add to Bag"> 
             </div>
           </div>
 
@@ -280,6 +281,8 @@
     <div class="col-md-12">
       <div class="bg-image d-flex">
         <img src="{% static 'media/contact-bckg.png' %}" alt="gold bracelet">
+        <div class="masthead background-image"
+        style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/contact-bckg.png');">
       </div>
     </div>
   </div>
@@ -289,7 +292,7 @@
 
       <div class="col-xl-3 col-md-4 col-sm-12  text-start">
         <h6 class=" mt-5 pb-2">SELINE & TAM</h6>
-        <a href="#" class="h2 btn btn-black my-5">Send a message</a>
+        <a href="{% url 'home:contact_form' %}" class="h2 btn btn-black my-5">Send a message</a>
       </div>
 
       <div class="col-xl-3 col-md-6 col-sm-12">

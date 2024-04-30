@@ -382,6 +382,20 @@ body {
     fill: #F1EEE9;
 }
 
+/* Contact Form Page */
+
+#contact-form {
+    font-family: Playfair Display, sans-serif;
+    width: 50%;
+}
+
+.fcontact {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
 /* Reviews Section */
 
 #review {

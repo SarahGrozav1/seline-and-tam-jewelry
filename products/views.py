@@ -165,11 +165,9 @@ def edit_review(request, product_id, review_id):
                     data.save()
                     messages.success(request, 'Successfully updated review!')
                     return redirect("products:detail_product", product_id=product_id)
-                else:
-                    form = ReviewForm(instance=review)
-                    return render(request, 'products/editreview.html', {"form": form})
-            else:
-                return redirect("products:product_detail", product_id)
+        else:
+            form = ReviewForm(instance=review)
+            return render(request, 'products/editreview.html', {"form": form})
             
 
 def delete_review(request, product_id, review_id):

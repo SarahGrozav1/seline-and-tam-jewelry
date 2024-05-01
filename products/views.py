@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category, Collections, ReviewRating
+from .models import Product, Category, Collections, ReviewRating, Wishlist
 from .forms import ProductForm, ReviewForm
 from django.db.models import Avg
 
@@ -179,3 +179,27 @@ def delete_review(request, product_id, review_id):
             review.delete()
         messages.success(request, 'Your review was deleted!')
         return redirect("products:detail_product", product_id=product_id)
+    
+# Add to wishlist function
+
+def add_to_wishlist(request, product_id):
+    # Retrieve the product object from the database using its id
+    product = Product.objects.get(id=product_id)
+
+    # Retrieve the user's wishlist from the database or create a new one if it doesn't exist
+    wishlist, created_on = Wishlist.objects.get_or_create(user=request.user)
+
+    # Add the product to the user's wishlist
+    wishlist.products.add(product)
+
+    # Redirect the user to the product detail page
+    return redirect('products:detail_product', product_id=product_id)
+
+# Wishlist page 
+
+def wishlist(request):
+    user_wishlist = Wishlist.objects.filter(user=request.user).first()
+    context = {
+        'wishlist': user_wishlist
+        }
+    return render(request, 'products/wishlist.html', context)

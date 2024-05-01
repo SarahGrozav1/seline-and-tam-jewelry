@@ -1,5 +1,5 @@
 from django.contrib import admin
-from.models import Product, Category, Collections, ReviewRating
+from .models import Product, Category, Collections, ReviewRating, Wishlist
 
 
 # Register your models here.
@@ -36,3 +36,4 @@ admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Collections, CollectionsAdmin)
 admin.site.register(ReviewRating, ReviewAdmin)
+admin.site.register(Wishlist)

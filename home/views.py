@@ -1,6 +1,4 @@
-
 from django.shortcuts import render
-from .models import Contact
 from django.contrib import messages
 
 # Create your views here.
@@ -26,7 +24,3 @@ def contact_form(request):
         messages.success(request, 'Thank you for contacting us')
     return render(request, 'home/contact.html')
 
-    
-    
-
-            

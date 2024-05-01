@@ -1,5 +1,6 @@
 from django.db import models
 from profiles.models import UserProfile
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -50,4 +51,14 @@ class ReviewRating(models.Model):
     
     def __str__(self):
         return str(self.id)
+    
+# Wishlist
+
+class Wishlist(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    products = models.ManyToManyField('Product')
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.user.username} Wishlist'
     

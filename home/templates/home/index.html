@@ -313,6 +313,16 @@
 
     </div>
   </div>
+<!-- Google API Map -->
+<div class="container mb-5">
+<div class="card">
+  <div class="row">
+      <div class="col-lg-12">
+          <div id="map"></div>
+      </div>
+  </div>
+</div>
+</div>
 </section>
 
 
@@ -323,5 +333,27 @@
 {% block postloadjs %}
 <script type="text/javascript" src="{% static 'js/clock.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/cards.js' %}"></script>
+
+<!-- Google API Map -->
+
+<script>
+  function initMap() {
+      var location = {
+          lat: -25.363,
+          lng: 131.044
+      };
+      var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: location
+      });
+      var marker = new google.maps.Marker({
+          position: location,
+          map: map
+      });
+  }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/
+js?key=AIzaSyBCZyx5sSWA8XXPx7Ryh25KxGPsLGpDd9Q&callback=initMap"></script>
 
 {% endblock %}

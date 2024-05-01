@@ -395,6 +395,13 @@ body {
     margin-bottom: 50px;
 }
 
+/* API Map */
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
 
 /* Reviews Section */
 

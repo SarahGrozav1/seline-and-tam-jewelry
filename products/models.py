@@ -62,3 +62,14 @@ class Wishlist(models.Model):
     def __str__(self):
         return f'{self.user.username} Wishlist'
     
+class WishlistItem(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    added_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-added_at']
+
+    def __str__(self):
+        return f'{self.user.username}\'s wishlist item for {self.product.title}'
+    

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category, Collections, ReviewRating, Wishlist
+from .models import Product, Category, Collections, ReviewRating, Wishlist, WishlistItem
 from .forms import ProductForm, ReviewForm
 from django.db.models import Avg
 
@@ -200,6 +200,13 @@ def add_to_wishlist(request, product_id):
 def wishlist(request):
     user_wishlist = Wishlist.objects.filter(user=request.user).first()
     context = {
-        'wishlist': user_wishlist
+        'wishlist': user_wishlist,
         }
     return render(request, 'products/wishlist.html', context)
+
+
+def remove_from_wishlist(request, id_product):
+    wishlist = get_object_or_404(Wishlist, user=request.user)
+    item_to_remove = get_object_or_404(Wishlist, id=id_product)
+    wishlist.wishlistitem_set.remove(item_to_remove)
+    return redirect('products:wishlist')

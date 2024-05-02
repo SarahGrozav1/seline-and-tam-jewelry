@@ -194,6 +194,7 @@ def add_to_wishlist(request, product_id):
     wishlist.products.add(product)
 
     # Redirect the user to the product detail page
+    messages.success(request, 'You have added to wishlist successfuly.')
     return redirect('products:products')
 
 # Wishlist page 
@@ -210,4 +211,5 @@ def remove_from_wishlist(request, product_id):
     wishlist = get_object_or_404(Wishlist, user=request.user)
     item_to_remove = get_object_or_404(Product, id=product_id)
     wishlist.products.remove(item_to_remove)
+    messages.success(request, 'You have removed from wishlist successfuly.')
     return redirect('products:wishlist')

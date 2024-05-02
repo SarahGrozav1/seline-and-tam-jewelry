@@ -154,10 +154,9 @@ def submit_review(request, product_id):
        
 def edit_review(request, product_id, review_id):
     if request.user.is_authenticated:
-        product = Product.objects.get(pk=product_id)
         review = ReviewRating.objects.get(product=product_id, id=review_id)
         
-        if request.user == review.user:
+        if request.user.id == review.user.id:
             if request.method == "POST":
                 form = ReviewForm(request.POST, instance=review)
                 if form.is_valid():
@@ -165,19 +164,21 @@ def edit_review(request, product_id, review_id):
                     data.save()
                     messages.success(request, 'Successfully updated review!')
                     return redirect("products:detail_product", product_id=product_id)
-        else:
-            form = ReviewForm(instance=review)
-            return render(request, 'products/editreview.html', {"form": form})
+                    
+                return render(request, 'products/editreview.html', {"form": form})
+            else:
+                form = ReviewForm(instance=review)
+                return render(request, 'products/editreview.html', {"form": form})
             
+    return redirect("products:detail_product", product_id=product_id)
 
 def delete_review(request, product_id, review_id):
     if request.user.is_authenticated:
-        product = Product.objects.get(pk=product_id)
         review = ReviewRating.objects.get(product=product_id, id=review_id)
            
-        if request.user == review.user:
+        if request.user.id == review.user.id:
             review.delete()
-        messages.success(request, 'Your review was deleted!')
+            messages.success(request, 'Your review was deleted!')
         return redirect("products:detail_product", product_id=product_id)
     
 # Add to wishlist function
@@ -193,7 +194,7 @@ def add_to_wishlist(request, product_id):
     wishlist.products.add(product)
 
     # Redirect the user to the product detail page
-    return redirect('products:detail_product', product_id=product_id)
+    return redirect('products:products')
 
 # Wishlist page 
 
@@ -205,8 +206,8 @@ def wishlist(request):
     return render(request, 'products/wishlist.html', context)
 
 
-def remove_from_wishlist(request, id_product):
+def remove_from_wishlist(request, product_id):
     wishlist = get_object_or_404(Wishlist, user=request.user)
-    item_to_remove = get_object_or_404(Wishlist, id=id_product)
-    wishlist.wishlistitem_set.remove(item_to_remove)
+    item_to_remove = get_object_or_404(Product, id=product_id)
+    wishlist.products.remove(item_to_remove)
     return redirect('products:wishlist')

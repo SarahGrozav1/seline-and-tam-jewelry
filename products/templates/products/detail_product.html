@@ -163,9 +163,11 @@
                     <div class="col-md-12 col-sm-12">
                         <br>
                         <p class="comment">{{ review.comment }}</p>
-                       
-                        <a href="{% url 'products:edit_review' product.id review.id %}">Edit</a>
-                        <a href="{% url 'products:delete_review' product.id review.id %}" class="text-danger" onclick="return confirm('Are you sure you want to delete this?');">Delete</a>
+                        
+                        {% if user.id == review.user.id %}
+                            <a href="{% url 'products:edit_review' product.id review.id %}">Edit</a>
+                            <a href="{% url 'products:delete_review' product.id review.id %}" class="text-danger" onclick="return confirm('Are you sure you want to delete this?');">Delete</a>
+                        {% endif %}
                     </div>
                 </div>
                 <br>

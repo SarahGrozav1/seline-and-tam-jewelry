@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card mt-5 mb-5">
-          <img src="{% static 'media/bg1.jpg' %}" alt="hand with jewellery" class="card-img-top">
+          <img class="card-img-top" src="{{ MEDIA_URL }}bg1.jpg" alt="hand with jewellery">
           <div class="card-body">
             <h2 class="card-title">SUSTAINABLY SOURCED</h2>
             <p class="card-text">Sustainable sourcing in the world of jewellery is gaining momentum as consumers
@@ -47,7 +47,7 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card mt-5 mb-5">
-          <img src="{% static 'media/bg3.jpg' %}" alt="lady with necklace" class="card-img-top">
+          <img class="card-img-top" src="{{ MEDIA_URL }}bg3.jpg" alt="lady with necklace">
           <div class="card-body">
             <h2 class="card-title">ETHICALLY CRAFTED</h2>
             <p class="card-text">Ethical craftsmanship in the world of jewellery is an essential movement that
@@ -63,7 +63,7 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card mt-5 mb-5">
-          <img src="{% static 'media/bg8.jpg' %}" alt="hand with jewellery" class="card-img-top">
+          <img class="card-img-top" src="{{ MEDIA_URL }}bg8.jpg" alt="hand jewellery">
           <div class="card-body">
             <h2 class="card-title">JEWELLERY CREATION </h2>
             <p class="card-text">Jewellery is crafted through a meticulous process.
@@ -255,10 +255,7 @@
     <!--curve ends here-->
     <div class="col-md-12">
       <div class="bg-image d-flex">
-        <img src="{% static 'media/contact-bckg.png' %}" alt="gold bracelet">
-        <div class="masthead background-image"
-        style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/contact-bckg.png');">
-      </div>
+        <img class="img-fluid" src="{{ MEDIA_URL }}contact-bckg.png" alt="gold bracelet">
     </div>
   </div>
 
@@ -284,10 +281,9 @@
         <h4>PHONE NUMBER</h4>
         <h5>(123) 456 7890</h5>
       </div>
-
-
     </div>
   </div>
+
 <!-- Google API Map -->
 <div class="container mb-5">
 <div class="card">

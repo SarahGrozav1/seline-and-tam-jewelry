@@ -139,6 +139,8 @@
                     <textarea name="comment" id="" rows="4" class="form-control"
                         placeholder="Write Your Review Here"></textarea>
                     <br>
+                    <!-- Checking if user is authenticated to appear the submit button if not to have instead a message that
+                    it need to be logged to send a review -->
                     {% if user.is_authenticated %}
                     <input type="submit" value="Submit Review" class="btn btn-black mt-5">
                     {% else %}
@@ -154,24 +156,29 @@
         <div class="col col-lg-6 col-md-12 d-flex justify-content-center">
             <div class="reviews-card d-flex- justify-content-center">
                 <h3 class="text-center mb-5">Reviews</h3>
-                {% for review in reviews %}
-                <div class="review-row">
-                    <div class="col-md-12 col-sm-12">
-                        <h5 class="text-left mt-2">{{ review.user }}</h5>
-                        <h5>{{ review.rating }}</h5>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                        <br>
-                        <p class="comment">{{ review.comment }}</p>
-                        
+                <!-- Check if there are any reviews available for the product -->
+                {% if reviews %}
+                    {% for review in reviews %}
+                        <div class="review row m-3">
+                          <div class="col-md-12 col-sm-12 ">
+                             <h5 class="text-left mt-2">{{ review.user }}</h5>
+                             <h5>{{ review.rating }}</h5>
+                          </div>
+                           <div class="col-md-12 col-sm-12">
+                           <br>
+                            <p class="comment">{{ review.comment }}</p>
+                    
                         {% if user.id == review.user.id %}
                             <a href="{% url 'products:edit_review' product.id review.id %}">Edit</a>
                             <a href="{% url 'products:delete_review' product.id review.id %}" class="text-danger" onclick="return confirm('Are you sure you want to delete this?');">Delete</a>
                         {% endif %}
+                    {% endfor %} 
+                    {% else %}  
+                    <p class="text-center">No reviews yet for this product.</p>
                     </div>
                 </div>
-                <br>
-                {% endfor %}
+                <br>              
+                {% endif %}
             </div>
         </div>
     </div>

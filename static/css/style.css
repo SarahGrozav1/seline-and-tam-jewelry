@@ -283,9 +283,9 @@ body {
 }
 
 #contact .bg-image {
+    background-size: cover;
+    width: 100%;
     height: 80vh;  
-    justify-content: center;
-    object-fit: cover;
 }
 
 #contact h4 {
@@ -340,9 +340,6 @@ body {
     margin-bottom: 50px;
 }
 
-
-
-
 /* Reviews Section */
 
 #review {
@@ -394,6 +391,9 @@ label:hover ~ input:checked ~label {
     font-size: 1.5rem;
 }
 
+#review .review {
+    border: 1px solid black;
+}
 
 /* Products main page */
 

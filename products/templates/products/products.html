@@ -14,7 +14,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
+                <!--  Checking whether 'current_categories' or 'current_collections' is not None and whether it contains only one collection. 
+                    Then display the name of that collection using 'current_collections.first.name'.  -->
+                {% if current_categories or current_collections %}
+                    {% if current_categories and current_categories.count == 1 %}
+                        <h2 class="logo-font">Products in {{ current_categories.first.name|title }}</h2>
+                    {% endif %}
+                    {% if current_collections and current_collections.count == 1 %}
+                        <h2 class="logo-font mb-5"> {{ current_collections.first.name|title }} Collection</h2>
+                    {% endif %}
+                {% else %}
+                <h2 class="logo-font">All Products</h2>
+                {% endif %}
                 {% for c in current_categories %}
                     <!-- <a class="category-badge text-decoration-none" href="{% url 'products:products' %}?category={{ c.name }}"> -->
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark"></span>

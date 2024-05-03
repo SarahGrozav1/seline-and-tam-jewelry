@@ -5,7 +5,7 @@
 
 <!-- HOME Section -->
 <section id="home">
-  <div class="masthead"
+  <div class="masthead" alt="necklace half pearls half gold"
     style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/necklace-white-shirt.png')">
     <div class="color-overlay d-flex justify-content-center align-items-center text-center">
       <h1 class="title1">Your dream in</h1>
@@ -17,8 +17,8 @@
 </section>
 
 <!-- About Section -->
-
 <div style="position: relative;">
+  <!--Shape divider-->
   <div class="custom-shape-divider-bottom-1714144216">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card mt-5 mb-5">
-          <img class="card-img-top" src="{{ MEDIA_URL }}bg1.jpg" alt="hand with jewellery">
+          <img class="card-img-top" src="{{ MEDIA_URL }}bg1.jpg" alt="golden jewelry - golden ring">
           <div class="card-body">
             <h2 class="card-title">SUSTAINABLY SOURCED</h2>
             <p class="card-text">Sustainable sourcing in the world of jewellery is gaining momentum as consumers
@@ -47,7 +47,7 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card mt-5 mb-5">
-          <img class="card-img-top" src="{{ MEDIA_URL }}bg3.jpg" alt="lady with necklace">
+          <img class="card-img-top" src="{{ MEDIA_URL }}bg3.jpg" alt="golden jewelry - golden wheat">
           <div class="card-body">
             <h2 class="card-title">ETHICALLY CRAFTED</h2>
             <p class="card-text">Ethical craftsmanship in the world of jewellery is an essential movement that
@@ -63,7 +63,7 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card mt-5 mb-5">
-          <img class="card-img-top" src="{{ MEDIA_URL }}bg8.jpg" alt="hand jewellery">
+          <img class="card-img-top" src="{{ MEDIA_URL }}bg8.jpg" alt="golden jewelry - golden diamond bracelet">
           <div class="card-body">
             <h2 class="card-title">JEWELLERY CREATION </h2>
             <p class="card-text">Jewellery is crafted through a meticulous process.
@@ -85,7 +85,7 @@
 <!-- Upcoming Collection Section -->
 
 <section class="upcoming-collection">
-  <div class="masthead background-image"
+  <div class="masthead background-image" alt="golden jewelry - golden drop earings"
     style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/drop-earring.png');">
     <div class="up-coll container-fluid ">
       <div class="centered row">
@@ -122,11 +122,12 @@
 
 <!-- LISA COLLECTION section -->
 
-<section class="theia-collection">
+<section class="lisa-collection">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <h2>Lisa Collection</h2>
+      <h2>Lisa Collection</h2> 
     </div>
+    <p class="text-center">Golden luxury jewelry</p>
     <div class="row">
       <div class="col-lg-4 col-md-4 mb-3">
         <div class="product-box">
@@ -171,7 +172,7 @@
           </div>
         </div>
       </div>
-      <a href="{% url 'products:products' %}?collections=lisa" class="btn btn-black mt-5 post-midle">See More >> </a>
+      <a href="{% url 'products:products' %}?collections=lisa" class="btn btn-black mt-3 post-midle">See More >> </a>
     </div>
   </div>
 </section>
@@ -208,7 +209,7 @@
 
       <div class="col-lg-3  mt-md-0">
         <div class="icon border-bottom">
-          <i class="big fas fa-circle-check" style="color: #000000;"></i>
+          <i class="big fas fa-circle-check mb-3" style="color: #000000;"></i>
           <h5>Ethically sourced</h5>
           <h5>and crafted</h5>
         </div>
@@ -284,19 +285,19 @@
     </div>
   </div>
 
-<!-- Google API Map -->
-<div class="container mb-5">
-<div class="card">
-  <div class="row">
-      <div class="col-lg-12">
-          <div id="map"></div>
-      </div>
-  </div>
-</div>
-</div>
+
 </section>
 
-
+<!-- Google API Map -->
+<div class="container mb-4 mt-5">
+  <div class="card">
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="map"></div>
+        </div>
+    </div>
+  </div>
+  </div>
 
 
 {% endblock %}

@@ -302,6 +302,7 @@
 {% endblock %}
 
 {% block postloadjs %}
+{{ block.super }}
 <script type="text/javascript" src="{% static 'js/clock.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/cards.js' %}"></script>
 

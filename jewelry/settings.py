@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 
-ALLOWED_HOSTS = ['seline-and-tam-jewelry-ef3ef903eb25.herokuapp.com','8000-sarahgrozav-selineandta-uq878y77ztn.ws-eu110.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['seline-and-tam-jewelry-ef3ef903eb25.herokuapp.com','8000-sarahgrozav-selineandta-uq878y77ztn.ws-eu111.gitpod.io', 'localhost']
 
 
 # Application definition

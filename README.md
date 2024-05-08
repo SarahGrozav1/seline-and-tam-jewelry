@@ -1,110 +1,103 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ***Seline & Tam Jewelry - Portfolio Project 5 Ecommerce***
+---
+# **1. Key project information**
 
-Welcome Sarah ,
+- **Description :** This Portfolio Project 5 website called **Seline & Tam Jewelry** is a site of imaginary online shop that sells jewelry like bracelets, earings, necklaces and rings. User can easily browse through the shop items, **add/delete** items from their **Wishlist**, express their opinion by leaving a **review** and **comment** on items and most importantly order their selected items for home delivery including online payment.
+- **Key project goal :** To offer all visitors of **Seline & Tam Jewelry** site the option to buy their chosen products, select delivery option and finish payment online without the need of leaving the house.
+- **Audience :** The audience age of this website is for 18 years and up.
+- **Live version :** Live version of **Seline & Tam Jewelry** e-shop page can be viewed [here](https://seline-and-tam-jewelry-ef3ef903eb25.herokuapp.com/).
+- **Developer :** [Grozav Sarah Ligia](https://github.com/tomik-z-cech/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Mockup](static/media/documents/mockup.png)
 
 ---
 
-Happy coding!
+# **2. Table of Contents**
+
+
+---
+
+# **3. User Experience (UX)**
+
+## **3.1. The Strategy Plane**
+
+### **3.1.1 The Idea**
+- The intention of **Seline & Tam Jewelry** site is to be friendly online shop where users can browse variate of products sorted between categories. Besides that, user can read details of each product, see product reviews and comments.
+
+
+
+### **3.1.2 The Ideal User**
+
+The target audience are individuals who are seeking luxury jewelry. 
+
+
+- Ideal user likes to shop online
+- Ideal user likes to explore new trends and ideas in the jewelry field
+- Ideal user likes to share their opinion in form of **reviews** and **comments**
+
+### **3.1.3 Site Goals**
+
+- Offer users ability of shopping online without leaving their home
+- Offer users ability of reading other people comments on products
+- Offer users ability to add items to their **Wishlist** if they want to save the item for later
+- Offer users the ability to see details of each item in shop ( price, description, collection etc. ) 
+
+### **3.1.4 User stories**
+
+### Desktop
+
+**Note!** It should be mentioned at this point that during development, I decided to change a few things in my design.
+
+Also missing here is the contact page. I originally intended this to be in the navbar but now I included a button in Contact section at the bottom of the home page.
+
+#### Home 
+![Home](/static/media/documents/home.png)
+
+#### Clock
+![Clock](/static/media/documents//clock.png)
+
+#### Collection 
+![Collection](/static/media/documents/collection.png)
+
+#### Promise
+![Promise](/static/media/documents/promise.png)
+
+#### Contact
+![ontact](/static/media/documents/contact-section.png)
+
+#### Products
+![Products](/static/media/documents/products.png)
+
+#### Product Detail
+![Product-detail](/static/media/documents/product.png)
+
+#### Shopping Bag
+![Shopping-bag](/static/media/documents/bag.png)
+
+#### Checkout
+![Checkout](/static/media/documents/checkout.png)
+
+#### Profile
+![Profile](/static/media/documents/profile.png)
+
+---
+
+### Early Development
+
+At the start of the project, even though I had the wireframes as versions of how I wanted the site to look, I more often than not made early mockup versions of the pages to quickly get the framework of the pages set up and to test whether I might like to do something another way or differently from the wireframes. 
+
+Here is an early example of my index page, mocked up at the very start of the project. 
+Key differences here include two more sections about more informations about the jewelry store that I decided to dont include them anymore in my project so that I could focus more on backend. But I want to create them in the future.
+
+![Early Development Index Section](/static/media/documents/more-sections1.png)
+
+![Early Development Index Section](/static/media/documents/more-sections2.png)
+
+I started the project with the home page and nav bar, before installing django allauth and getting the base templates for that. From there, I began working on backend more and didn't focuse on frontend because I wanted to leave it the last, first to make my project work and then add design and fronted details to look better.
+
+Here is an early mockup of my collections page which I decided to don't make it anymore because I did a dropdown button in the navbar from where the user can select easily the collection he wants to see.
+
+![Early Development Collections Page](/static/media/documents/collection-page.png)
+
+---
+

@@ -17,28 +17,13 @@
 
 ---
 
-# **3. User Experience (UX)**
+# **3. Wireframes and Planning**
 
-### **3.1.1 The Idea**
-- The intention of **Seline & Tam Jewelry** site is to be friendly online shop where users can browse variate of products sorted between categories. Besides that, user can read details of each product, see product reviews and comments.
+### Canva wireframes/mockups
 
-### **3.1.2 The Ideal User**
+I used Canva to make mockups for the website and design how I initially imagined the site would look. 
 
-The target audience are individuals who are seeking luxury jewelry. Those who want to make gifts or to wear a luxury jewelry for themselves.
-
-- Ideal user likes to shop online
-- Ideal user likes to explore new trends and ideas in the jewelry field
-- Ideal user likes to share their opinion in form of **reviews** and **comments**
-
-### **3.1.3 Site Goals**
-
-- Offer users ability of shopping online without leaving their home
-- Offer users ability of reading other people comments on products
-- Offer users ability to add items to their **Wishlist** if they want to save the item for later
-- Offer users the ability to see details of each item in shop ( price, description, collection etc. ) 
-- Provide site visitors with an easy to navigate site to view jewelry products
-
-### **3.1.4 User stories**
+<details><summary>Desktop Wireframes</summary>
 
 ### Desktop
 
@@ -76,9 +61,11 @@ Also missing here is the contact page. I originally intended this to be in the n
 #### Profile
 ![Profile](/static/media/documents/profile.png)
 
+</details>
+
 ---
 
-### **3.1.5 Early Development**
+### Early Development
 
 At the start of the project, even though I had the wireframes as versions of how I wanted the site to look, I more often than not made early mockup versions of the pages to quickly get the framework of the pages set up and to test whether I might like to do something another way or differently from the wireframes. 
 
@@ -97,7 +84,28 @@ Here is an early mockup of my collections page which I decided to don't make it 
 
 ---
 
-### **3.1.6 SEO and Web Marketing**
+# **4. User Experience (UX)**
+
+### **4.1.1 The Idea**
+- The intention of **Seline & Tam Jewelry** site is to be friendly online shop where users can browse variate of products sorted between categories. Besides that, user can read details of each product, see product reviews and comments.
+
+### **4.1.2 The Ideal User**
+
+The target audience are individuals who are seeking luxury jewelry. Those who want to make gifts or to wear a luxury jewelry for themselves.
+
+- Ideal user likes to shop online
+- Ideal user likes to explore new trends and ideas in the jewelry field
+- Ideal user likes to share their opinion in form of **reviews** and **comments**
+
+### **4.1.3 Site Goals**
+
+- Offer users ability of shopping online without leaving their home
+- Offer users ability of reading other people comments on products
+- Offer users ability to add items to their **Wishlist** if they want to save the item for later
+- Offer users the ability to see details of each item in shop ( price, description, collection etc. ) 
+- Provide site visitors with an easy to navigate site to view jewelry products
+
+### **4.1.4 SEO and Web Marketing**
 
 **Who:** I am marketing predominantly towards a jeweler-enthuasiast.
 **What:** I am selling jewelry, designed to cater towards this audience. I therefore make it very accessible and clear on my site, so that the audience can go directly towards what they are looking for. I include images of jewelry, designed to excite the site viewer into wondering what it's like to wear them with some sophisticated clothes. It was equally important to make clear titles and key pieces of information available for the site viewers to see on which ever respective page/product they are viewing.
@@ -107,7 +115,7 @@ Here is an early mockup of my collections page which I decided to don't make it 
 Software developers play a role in making sure their website can be easily found through search engines, including the reviews of Google Search.
 Therefore, when implementing SEO (Search Engine Optimisation) tools, the best means available to you are through descriptive and relevant keywords, sitemaps.xml and robots.txt files.
 
-**Keywords and sitemap/robots**
+### **4.1.5 Keywords and sitemap/robots**
 
 - I included keywords and more tags in my base.html document. This allowed me to define keywords, an author, a site description and a viewport. For the keywords themselves I thought about short and longer words and phrases respectively that might be looked for. 
 
@@ -118,5 +126,104 @@ Therefore, when implementing SEO (Search Engine Optimisation) tools, the best me
 - I have included a sitemap.xml file in the root directory, which allows search engines to crawl through my site and make content more discoverable.
 
 - I have a robots.txt file which provides the location of the sitemap and also defines any folders/files which are prohibited from search engine crawlers.
+
+### **4.1.6 Agile Methodologies**
+
+To plan tasks to implement for my website, I used Github Projects, which is a Kanban style board to track your project progress. You can track user stories, epics, ideas, to-do items and you can all see what tasks have been completed.
+
+You can see my project board [here](https://github.com/users/SarahGrozav1/projects/8)
+
+### **4.1.7 User stories**
+
+- [User Story: Products Page]([#1](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/1))
+    - As a Site User I want to be able to view a list of products so that I can select some to purchase.
+
+- [User Story: Detail Product Page]([#2](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/2))
+    - As a Site User I want to be able to view individual product details so that I can see the price, description, rating, product image and collection.
+
+- [User Story: Shopping Bag]([#3](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/3))
+    - As a Site User I want to be able to easily see the total of my purchases at any time so that I can avoiding spending to much.
+
+- [User Story: Register]([#4](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/4))
+    - As a Site User I want to be able to easily register for an account so that I can have a personal account and be able to view my profile with orders I have made.
+
+- [User Story: Log in/ Log Out page]([#5](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/5))
+    - As a Site User I want to be able to easily login and logout so that I can access my personal account information.
+
+- [User Story: Success message]([#6](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/6))
+    - As a  User I want to receive an email confirmation after registering so that I can verify that my account registration was successful.
+
+- [User Story: Profile Page]([#7](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/7))
+    - As a User I want to be able to have a perosnalized user profile so that I can view my personal order history and order confirmations and save my payment information.
+
+- [User Story: Navbar]([#8](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/8))
+    - As a Site User I want to be able to sort the list of available products so that I can easily identify the best rated, best prices and sorted products.
+
+- [User Story: Navbar collections dropdown button]([#9](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/9))
+    - As a Site User I want to be able to see every product from witch collection it is so that I can find it easier.
+
+- [User Story: Product Management Page]([#10](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/10))
+    - As a Store Owner I want to be able to add a product so that I can add new items to my store
+
+- [User Story: Edit product button]([#11](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/11))
+    - As a Store Owner I want to be able to Edit a product so that I can change product prices, descriptions, images and other product criteria
+
+- [User Story: Delete product button]([#12](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/12))
+    - As a Store Owner I want to be able to Delete a product so that I can remove items that are no longer for sale.
+
+- [User Story: Contact Page]([#13](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/13))
+    - As a Site User I want to be able to contact the store owner so that I can ask if I have questions.
+
+- [User Story: Product Reviews]([#14](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/14))
+    - As a User I want to be able to see others reviews so that I can decide if I want to purchase that product
+
+- [User Story: Edit review button]([#15](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/15))
+    - As a User I want to be able to edit my reviews so that I can update them when I want or when I made a mistake.
+
+- [User Story: Delete review button]([#16](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/16))
+    - As a Site User I want to be able to have a button for delete so that I can delete my review
+
+- [User Story: Error message]([#17](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/17))
+    - As a Site User I want to be receive error messages so that I know what I did wrong
+
+- [User Story: Google Map]([#18](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/18))
+    - As a Site User I want to see a Google Map so that I can find the store easier
+
+- [User Story: Wishlist Page]([#19](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/19))
+    - As a Site User I want to have a wishlist page so that I can see my favourite products
+
+- [User Story: Add to wishlist button]([#20](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/20))
+    - As a Site User I want to see an 'add to wishlist' button so that I can add my favourite product to wishlist page.
+
+- [User Story: Remove button from wishlist Page]([#21](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/21))
+    - As a Site User I want to have a 'remove' button for every product adde in wishlist so that I can remove it when I dont want it to be there anymore.
+
+- [User Story: Admin Panel messages]([#22](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/22))
+    - As a Store Owner I want to be able to see mesages from users so that I know their concern about the website
+
+
+### **4.1.8 Epics**
+
+- Epic: Install Django
+    - As a Developer I would like to install Django so that I can begin working on my project.
+    
+- Epic: Initial Deploy to Heroku
+    - As a Developer I would like to deploy to heroku early so that I can confirm my configuration is wired up correctly.
+
+- Epic: AWS
+    - As a Developer I would like to create an AWS S3 bucket so that I can store my static files and media.
+
+- Epic: Login/Logout
+    - As a Site User I would like to Login and Logout so that I can keep my account secure.
+- Epic: Basket
+    - As a Site User I would like to View a Basket so that I can check my orders before checking out.
+- Epic: Stripe Checkout
+    - As a Site User I would like to checkout so that I can purchase the items I came to buy.
+- Epic: Mailchimp Newsletter
+    - As a Site User I would like to Sign up to a mailing list so that I can get new information from the business, including new products or promotions.
+- Epic: Testing]
+    - As a Software Developer I would like to Create Manual tests so that I can check the quality and functionality of my code.
+
+---
 
 

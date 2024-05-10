@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /shpbag/
+Sitemap: https://seline-and-tam-jewelry-ef3ef903eb25.herokuapp.com/sitemap.xml

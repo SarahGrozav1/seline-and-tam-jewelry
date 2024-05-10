@@ -221,7 +221,7 @@ You can see my project board [here](https://github.com/users/SarahGrozav1/projec
     - As a Site User I would like to checkout so that I can purchase the items I came to buy.
 - Epic: Mailchimp Newsletter
     - As a Site User I would like to Sign up to a mailing list so that I can get new information from the business, including new products or promotions.
-- Epic: Testing]
+- Epic: Testing
     - As a Software Developer I would like to Create Manual tests so that I can check the quality and functionality of my code.
 
 ---

@@ -105,7 +105,7 @@
 </div>
 <!-- Review Section -->
 
-<section id="review">
+<section id="review" style="overflow-x: hidden;">
     <div class="row">
 
         <div class="col col-lg-5 col-md-12 text-center ml-5">
@@ -159,25 +159,77 @@
                 <!-- Check if there are any reviews available for the product -->
                 {% if reviews %}
                     {% for review in reviews %}
-                        <div class="review row m-3">
-                          <div class="col-md-12 col-sm-12 ">
-                             <h5 class="text-left mt-2">{{ review.user }}</h5>
-                             <h5>{{ review.rating }}</h5>
-                          </div>
-                           <div class="col-md-12 col-sm-12">
-                           <br>
-                            <p class="comment">{{ review.comment }}</p>
+                        <div class="review row m-3 p-2">
+                            <div lass="col-md-12 col-sm-12 ">
+                                <h5 class="text-left mt-2">{{ review.user }}</h5>
+
+                                <div class="rate-test">
+                                    {% if review.rating == 5 %}
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating5-{{ review.id }}" value="5" required checked disabled ><label for="rating5-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% else %}  
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating5-{{ review.id }}" value="5" required disabled ><label for="rating5-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% endif %}
+
+                                    {% if review.rating == 4 %}
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating4-{{ review.id }}" value="4" required checked disabled><label for="rating4-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% else %}  
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating4-{{ review.id }}" value="4" required disabled><label for="rating4-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% endif %}
+
+                                    {% if review.rating == 3 %}
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating3-{{ review.id }}" value="3" required checked disabled><label for="rating3-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% else %}  
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating3-{{ review.id }}" value="3" required disabled><label for="rating3-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% endif %}
+
+                                    {% if review.rating == 2 %}
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating2-{{ review.id }}" value="2" required checked disabled><label for="rating2-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% else %}  
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating2-{{ review.id }}" value="2" required disabled><label for="rating2-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% endif %}
+
+                                    {% if review.rating == 1 %}
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating1-{{ review.id }}" value="1" required checked disabled><label for="rating1-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% else %}  
+                                        <input type="radio" name="rating-{{ review.id }}" id="rating1-{{ review.id }}" value="1" required disabled><label for="rating1-{{ review.id }}"
+                                            class="fas fa-star"></label>
+                                    {% endif %}
+            
+                                    
+            
+                                   
+            
+                                    
+            
+                                   
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12 col-sm-12">
+                                <br>
+                                <p class="comment">{{ review.comment }}</p>
                     
-                        {% if user.id == review.user.id %}
-                            <a href="{% url 'products:edit_review' product.id review.id %}">Edit</a>
-                            <a href="{% url 'products:delete_review' product.id review.id %}" class="text-danger" onclick="return confirm('Are you sure you want to delete this?');">Delete</a>
-                        {% endif %}
+                                {% if user.id == review.user.id %}
+                                    <a href="{% url 'products:edit_review' product.id review.id %}">Edit</a>
+                                    <a href="{% url 'products:delete_review' product.id review.id %}" class="text-danger" onclick="return confirm('Are you sure you want to delete this?');">Delete</a>
+                                {% endif %}
+                            </div>
+                        </div>
                     {% endfor %} 
-                    {% else %}  
-                    <p class="text-center">No reviews yet for this product.</p>
+                {% else %}  
+                    <div class="review row m-3">
+                        <p class="text-center">No reviews yet for this product.</p>
                     </div>
-                </div>
-                <br>              
+                    <br>        
                 {% endif %}
             </div>
         </div>

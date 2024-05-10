@@ -352,6 +352,20 @@ body {
     font-size: 2rem;
 }
 
+.rate-test > input {
+    display: none;
+}
+
+.rate-test {
+    display: inline-block;
+    border: 0;
+}
+
+.rate-test > label { 
+    float: right;
+}
+
+
 .rate > input {
     display: none;
 }
@@ -377,13 +391,13 @@ body {
 }
 
 /* click and hover */
-input:checked ~ label, label:hover ~ label {
+input:checked ~ label, .rate label:hover ~ label {
     color: #ffb503;
 }
 
 /* hover highlight */
-input:checked + label:hover, input:checked ~ label:hover,input:checked ~ label:hover ~label,
-label:hover ~ input:checked ~label {
+input:checked + .rate label:hover, input:checked ~ .rate label:hover, input:checked ~ .rate label:hover ~label,
+.rate label:hover ~ input:checked ~label {
     color: #cc9000;
 }
 

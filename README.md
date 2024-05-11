@@ -226,4 +226,141 @@ You can see my project board [here](https://github.com/users/SarahGrozav1/projec
 
 ---
 
+# **5. Features**
 
+Below is a comprehensive list of the site features and their relations to the user stories:
+
+1. A Nav Bar/Header that:
+    - is split in two with a top nav where the user can find company logo that redirects to the   home page when clicked on, account icon when it is clicked on the user can find register or log in functionalities and if it logged the user will see my profile, wishlist and logout functionalities and the last is the basket icon
+    - has a middle nav which serves as the main navigation of the site where the user can find a house icon and see products by category by rating , by price or by collections
+
+ - Acceptance Criteria:
+        - A Responsive fixed-top header that contains a logo, user icon and basket icon on desktop and a triple line menu icon user icon basket icon and a basket icon on mobile/tablet
+        - Nav bar is clean and consistent with the theme and overall design scheme
+
+    ![Navbar](/static/media/documents/navbar.png)
+
+
+2. A Home Page that:
+    - Contains more sections
+    - Contains a background image
+    - Contains a title and subtitle and a button
+    - serves as the entry page 
+
+    ![Home Page](/static/media/documents/home-page.png)
+
+    - Acceptance Criteria:
+        - Home Page features a Nav Bar, Main body with Hero image
+        - Has a consistent theme and colour scheme
+        - Most Pages can be navigated to directly from this one point
+        - Theme of site and target audience easily identifiable from the home page alone
+
+  - About Section:
+
+      - Contains three cards with images and text
+      - Contains a background with shape divider
+
+    ![About Section](/static/media/documents/about.png)
+
+    - Acceptance Criteria:
+        - About section features three cards with details about the company jewelry
+        - Has a consistent theme and colour scheme
+
+  - Countdown Section:
+
+      - Contains a background image
+      - Contains a header 
+      - Contains a digital clock made with js
+    
+    ![Countdown Section](/static/media/documents/countdown.png)
+
+    - Acceptance Criteria:
+
+      - Countdown Section features a text header with the date of upcoming collection
+      - Has a real countdown clock until the date of upcoming new collection
+      - Has a consistent theme and colour scheme
+
+  - New/Last Collection Section:
+
+      - Contains a header with the name of the new collection
+      - Contains a paragraph with key words
+      - Contains three cards with images
+      - Contains name and price of the products showed in the image above
+      - Contains a see more button
+    
+    ![New Collection Section](/static/media/documents/new-collections.png)
+
+    - Acceptance Criteria:
+
+      - Countdown Section features a text header with the date of upcoming collection
+      - Has a real countdown clock until the date of upcoming new collection
+      - Has a see more button for the user to see more products of that new collection
+      - Has a consistent theme and colour scheme
+
+
+  - Our Promise Section:
+
+      - Contains a header with the title of the section
+      - Contains a shape divider for the top of the section
+      - Contains four icons 
+      - Contains text for each icon
+    
+    ![Our Promise Section](/static/media/documents/our-promise.png)
+
+    - Acceptance Criteria:
+
+      - Have four icons for more informations 
+      - Have a text under each icon for the user to understand the icons for more informations
+      - Has a consistent theme and colour scheme
+      
+  - Contact Section:
+
+      - Contains a shape divider for the top of the section
+      - Contains a background image only on the half of screen
+      - Contains the names of the website managers
+      - Contains a button
+      - Contains location , email address and phone number
+    
+    ![Contact Section](/static/media/documents/contact.png)
+
+    - Acceptance Criteria:
+
+      - Have a "Send a message" button for users to contact the seller 
+      - Have contact information for users to find them easily
+      - Has a consistent theme and colour scheme
+
+  - Map Section:
+
+      - Contains a API Map
+    
+    ![Contact Section](/static/media/documents/map.png)
+
+    - Acceptance Criteria:
+
+      - Have a map for users so that they can find easily the store
+
+  - Footer:
+
+      - Contains a hr to separate the page from footer
+      - Contains five social media icons
+      - Contains a copyright text
+    
+    ![Contact Section](/static/media/documents/footer.png)
+
+    - Acceptance Criteria:
+
+      - Have social media links inclusive business facebook page for users to find more informations about store and products such as new collections, reviews and owners story.
+
+3. A Contact Page that:
+    - Contains more sections
+    - Contains a background image
+    - Contains a title and subtitle and a button
+    - serves as the entry page 
+
+    ![Contact Page](/static/media/documents/home-page.png)
+
+    - Acceptance Criteria:
+        - Home Page features a Nav Bar, Main body with Hero image
+        - Has a consistent theme and colour scheme
+        - Most Pages can be navigated to directly from this one point
+        - Theme of site and target audience easily identifiable from the home page alone

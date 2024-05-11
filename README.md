@@ -352,15 +352,169 @@ Below is a comprehensive list of the site features and their relations to the us
       - Have social media links inclusive business facebook page for users to find more informations about store and products such as new collections, reviews and owners story.
 
 3. A Contact Page that:
-    - Contains more sections
-    - Contains a background image
-    - Contains a title and subtitle and a button
-    - serves as the entry page 
+    - Contains navbar
+    - Contains a contact form
+    - Contains a button
+    - Contains a paragraph 
+    - Contains footer
 
-    ![Contact Page](/static/media/documents/home-page.png)
+    ![Contact Page](/static/media/documents/contact-page.png)
 
     - Acceptance Criteria:
-        - Home Page features a Nav Bar, Main body with Hero image
+        - Contact Page features a navbar so that the user can easily navigate trough the pages
         - Has a consistent theme and colour scheme
-        - Most Pages can be navigated to directly from this one point
-        - Theme of site and target audience easily identifiable from the home page alone
+        - Have a form so that the user can send easily a message to store owners
+        - Have a submit button so that the user can submit the form
+        - Have a paragraph with facebook link to invite the users to join the bussiness facebook page
+
+
+4. A Products Page that:
+    - Contains navbar
+    - Contains a heading
+    - Contains a paragraph
+    - Contains all products
+    - Contains footer 
+
+    ![Products Page](/static/media/documents/products-page.png)
+
+    - Acceptance Criteria:
+        - Products Page features a navbar so that the user can easily navigate trough the pages
+        - Has a consistent theme and colour scheme
+        - Have a title so that the user know on what page is and in what category
+        - Have all products so that the user can see them and buy if wants
+        - Have a paragraph where it writes how many products are in the category
+
+  - If user wants to see products from one collection or by category:
+
+      - Contains a different heading for each collection or category
+    
+    ![Collections Heading](/static/media/documents/collections-category.png)
+    ![Category Heading](/static/media/documents/products-by-category.png)
+
+    - Acceptance Criteria:
+
+      - Heading changes on every collection or category so that it would be easier for the user to know in what category or collections he is 
+
+5. A Detail Product Page that:
+    - Contains navbar
+    - Contains image of the product
+    - Contains informations about product
+    - Contains quantity field
+    - Contains add to bag button
+    - Contains wishlist button
+    - Contains keep shopping button
+    - Contains review section
+    - Contains footer 
+
+    ![Detail Product Page](/static/media/documents/detail_product.png)
+
+    - Acceptance Criteria:
+        -Detail Product Page features a navbar so that the user can easily navigate trough the pages
+        - Has a consistent theme and colour scheme
+        - Have an image to see how the product look
+        - Have informations about product so that the user can read and know more about product
+        - Have a wishlist button so that the user can add to the wishlist the product if he wants
+        - Have a keep shopping button so that the user can return to all products if he want to see more
+        - Have a add to bag button so that the user can add to bag the product if he wants to buy
+        - Have a review section where user cand add a review and see others reviews
+
+
+6. A Bag Page that:
+    - Contains navbar
+    - Contains a heading
+    - Contains image of the product
+    - Contains informations about product
+    - Contains quantity field
+    - Contains total of the bag
+    - Contains button to go to checkout
+    - Contains keep shopping button
+    - Contains footer 
+
+    ![Bag Page](/static/media/documents/bag-page.png)
+
+    - Acceptance Criteria:
+        - Shopping Bag Page features a navbar so that the user can easily navigate trough the pages
+        - Has a consistent theme and colour scheme
+        - Have an image to see how the product look
+        - Have informations about product so that the user know the name and price of the product
+        - Have a quantity field so that the user can add or delete the quantity of the product
+        - Have a grand total so that the user can see how much it will cost all the products in total
+        - Have a checkout button so that the user can go for the next step to finish the order
+        - Have a keep shopping button so that the user can return to all products if he want to see more
+
+
+7. A Checkout Page that:
+    - Contains navbar
+    - Contains a heading
+    - Contains a form 
+    - Contains image of the product
+    - Contains informations about product
+    - Contains total of the bag
+    - Contains complete order button 
+    - Contains adjust bag button
+    - Contains footer 
+
+    ![Checkout Page](/static/media/documents/checkout-page.png)
+
+    - Acceptance Criteria:
+        -Checkout Bag Page features a navbar so that the user can easily navigate trough the pages
+        - Has a consistent theme and colour scheme
+        - Have an image to see how the product look
+        - Have informations about product so that the user know the name and price of the product
+        - Have a grand total so that the user can see how much it will cost all the products in total
+        - Have a complete order button so that the user can finish the order
+        - Have a adjust bag button so that the user can return to bag page if he want to change something in his order
+
+
+8. A Success checkout Page that:
+    - Contains navbar
+    - Contains a heading
+    - Contains informations about order
+    - Contains keep shopping button
+    - Contains footer 
+
+    ![Success Checkout Page](/static/media/documents/checkout-success-page.png)
+
+    - Acceptance Criteria:
+        - Success Checkout Page features a navbar so that the user can easily navigate trough the pages
+        - Has a consistent theme and colour scheme
+        - Have informations about the order so that the user know informations about his order
+        - Have a keep shopping button so that the user can return to all products if he want to see more
+
+
+9. A Profile Page that:
+    - Contains navbar
+    - Contains a heading
+    - Contains a form for users address
+    - Contains button for updating informations
+    - Contains saved orders of the user
+    - Contains footer 
+
+    ![Profile Page](/static/media/documents/profile-page.png)
+
+    - Acceptance Criteria:
+        - Profile Page features a navbar so that the user can easily navigate trough the pages
+        - Has a consistent theme and colour scheme
+        - Have informations about users address
+        - Have a button for updating informations so that the user can update his address informations
+        - Have all his orders saved with details so that the user know everything about his old orders
+
+10. A Wishlist Page that:
+    - Contains navbar
+    - Contains a heading
+    - Contains a paragraph
+    - Contains all products added to wishlist
+    - Contains footer 
+
+    ![Wishlist Page](/static/media/documents/wishlist.png)
+
+    - Acceptance Criteria:
+        - Shopping Bag Page features a navbar so that the user can easily navigate trough the pages
+        - Has a consistent theme and colour scheme
+        - Have a title so that the user know on what page is
+        - Have all saved products so that the user can see them and buy if wants
+        - Have a paragraph where it writes how many products are in the wishlist
+
+
+
+    

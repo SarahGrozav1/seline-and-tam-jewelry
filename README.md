@@ -529,7 +529,32 @@ Below is a comprehensive list of the site features and their relations to the us
     - will appear if the user looks for a page that doesn't exist
     - will encourage the user to return to the home page through a home page button clearly displayed
 
-    ![Custom Error 404 Page](/static/images/features/404-page.png)
+    ![Custom Error 404 Page](/static/media/documents/404-page.png)
+
+
+# **5. Design**
+
+Seline & Tam Jewelry's Site features neutral designs.
+I use a lot of beige color and added white and black to it. 
+
+`#f1eee9` is the main background colour you see on the site, followed by `#dfdad3` for the main nav bar.
+The colors from the website is my personal choice I have looked on pinterest for colors combinations and I choose this colors based on the home page backgorund image. I have always liked neutral colors.
+
+See the main colour palette below:
+![Colour Palette](/static/media/documents/colors.png)
+
+I have used a lot of standard Bootstrap colors as well for many buttons and toasts on the site. 
+The usual Success Green, Warning Yellow, Primary Blue, Info Blue and Danger Red colours are implemented all across the site.
+They give great visual feedback to users and so I think they are a fantastic out-of-the-box solution to add relevant colour quickly.
+
+The structure of the site is based around 2 navigation menus. A top nav, where users access account or authentication related content and basket/checkout functionalities (+ the site logo, which also returns users to the home page), and a middle nav which serves as the main point of reference for the rest of the site. Both nav bars can be found on all pages.
+
+A lot of the other content contains some form of bootstrap card type design, such as the products page and some pages with forms. I made use of 3 separate card-like containers in the basket page to house and separate different info, where I would ideally like users to focus on different info separate from each other. 
+
+The main fonts across the website are ` 'Playfair Display', sans-serif; `
+
+I used diamond icon as my favicon for the site:
+![Favicon](/static/media/documents/favicon.png)
  
 
 

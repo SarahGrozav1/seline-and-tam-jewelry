@@ -515,6 +515,24 @@ Below is a comprehensive list of the site features and their relations to the us
         - Have all saved products so that the user can see them and buy if wants
         - Have a paragraph where it writes how many products are in the wishlist
 
+11. An Admin-only management page that:
+    - is accessed through a superuser exclusive link
+    - opens a page for admins to add new products
+
+    ![Management Page](/static/media/documents/add-product.png)
+
+    - Acceptance Criteria:
+        - Superuser/Admin only access
+        - Products can be added to the database from a form on the page
+
+12. A custom error 404 page that:
+    - will appear if the user looks for a page that doesn't exist
+    - will encourage the user to return to the home page through a home page button clearly displayed
+
+    ![Custom Error 404 Page](/static/images/features/404-page.png)
+ 
+
+
 
 
     

@@ -531,6 +531,7 @@ Below is a comprehensive list of the site features and their relations to the us
 
     ![Custom Error 404 Page](/static/media/documents/404-page.png)
 
+---
 
 # **5. Design**
 
@@ -541,6 +542,7 @@ I use a lot of beige color and added white and black to it.
 The colors from the website is my personal choice I have looked on pinterest for colors combinations and I choose this colors based on the home page backgorund image. I have always liked neutral colors.
 
 See the main colour palette below:
+
 ![Colour Palette](/static/media/documents/colors.png)
 
 I have used a lot of standard Bootstrap colors as well for many buttons and toasts on the site. 
@@ -554,8 +556,55 @@ A lot of the other content contains some form of bootstrap card type design, suc
 The main fonts across the website are ` 'Playfair Display', sans-serif; `
 
 I used diamond icon as my favicon for the site:
+
 ![Favicon](/static/media/documents/favicon.png)
  
+---
+
+# **6. Facebook**
+
+Seline & Tam Jewelry has a Facebook page, where users can follow and like the page, interact with posts to keep up to date with the latest news at Seline & Tam Jewelry store.
+
+As a part of the business marketing strategy and a key foundation of any website's online marketing, a Facebook page provides the means to update users on a popular social media platform with the latest news relating to the business, store. 
+
+In time, engagement will increase with followers gained and interactions through comments, reviews, likes and shares. 
+It serves the site/business goals of growing the business and shining a positive light on motorsports and promoting motorsports in the UK.
+The Facebook page will increase the reach of the business to new potential customers and engage with existing clients.
+
+
+![Facebook page](/static/media/documents/facebook.png)
+
+---
+
+# **7. Future Implementations**
+
+- Add a button to the detail product page for choosing the size of the jewelries the user need.
+- Add a CUSTOMIZE button for the user to choose their own suitable size to make the order according to the size they want. By clicking the CUSTOMIZE button will appear as a popup form where the user can put his desired size or simply have a field where the user can write the desired size. 
+- Add fotos in the login/register pages to attract the user. Below is an example of how I made in another project.
+
+![Future implementation](/static/media/documents/future-implementation.png)
+
+- Add more informations about products in detail product page
+- Change the design of 404 error page
+- Change the design of products card where the user will have one button for add to bag and two icons. One for wishlist and one eye icon to redirect user to detail product page. See example below from another project made by me.
+
+![Future implementation- Cards](/static/media/documents/cards-future-implementation.gif)
+
+---
+
+# **8. Database Schema**
+
+
+I used **DBeaver** to map out an ER Diagram for my Database Schema:
+
+![DB Schema](/static/media/documents/dbeaver-1.png)
+![DB Schema](/static/media/documents/dbaver-2.png)
+
+
+---
+
+
+
 
 
 

@@ -603,6 +603,728 @@ I used **DBeaver** to map out an ER Diagram for my Database Schema:
 
 ---
 
+# **8. Technologies Used**
+
+Full list of technology implemented below:
+
+- HTML
+- CSS 
+- Bootstrap - A styling framework used to speed up layout and styles. 
+- Django Framework - Main, Python based framework on which this project is based.
+- Python 3.8 - Version of Python installed on Gitpod
+- Javascript 
+- Stripe - APIs that handles the payments on the project
+- AWS S3 - for storing static files such as media
+- HEROKU - used to host my website
+- Github - used to host the code from my repository
+- VSCode - used to write and store code on a local machine
+- ElephantSQL (Hosted my PostgreSQL database)
+- PostgreSQL (RDBMS) - The Regional Database Management System used for the data/backend of the project
+- Django Summernote - for styling the text boxes in the admin page with a WYSIWYG (what you see is what you get) editor.
+- Django Crispy Forms - for neatly styling form layouts
+- Pillow - A PIL (Python Imaging Library)
+- GMail - for sending real email from gmail to users in production
+- Mailchimp - also for sending real newsletters
+- DBeaver - for importing data and mapping out ER diagrams from connected databases
+- VEED.IO - for creating boomerang for README file
+- UNSPLASH - for downloading HD images for this project
+
+---
+
+# **9. Python Packages Installed**
+
+
+- asgiref==3.7.2
+- boto3==1.34.88
+- botocore==1.34.88
+- dj-database-url==0.5.0
+- Django==3.2.24
+- django-allauth==0.41.0
+- django-countries==7.2.1
+- django-crispy-forms==1.14.0
+- django-storages==1.14.2
+- gunicorn==22.0.0
+- jmespath==1.0.1
+- oauthlib==3.2.2
+- pillow==10.2.0
+- psycopg2==2.9.9
+- python3-openid==3.2.0
+- pytz==2024.1
+- requests-oauthlib==1.3.1
+- s3transfer==0.10.1
+- sqlparse==0.4.4
+- stripe==9.0.0
+- urllib3==1.26.18
+
+---
+
+# **10. The Mailchimp**
+
+- [Mailchimp Site](https://mailchimp.com/)
+
+
+### What is Mailchimp?
+- For mailing purposes, we need to use for newsletters. 
+- Mailchimp allows you to send emails. With Mailchimp, you also have the advantage of managing all your marketing channels, including email and SMS*, from one unified platform - **Definition from Mailchimp itself.**
+
+### Why use Mailchimp?
+- Mailchimp is a free mailing server.
+- It provides 1,000 emails per month included in the free account.
+- It's very easy to use and fast.
+- It has a automations tool
+
+### How does Mailchimp work?
+- After creating an account, and following the documentation, Mailchimp provides an API key to use in our env.py file.
+- We create email design and text. 
+- Mailchimp is able to send automated emails to every new user. And if it's new user will be send automated email welcome message.
+
+---
+
+# **11. Testing**
+
+# Manual Testing
+
+This section of the documentation comprises of various manual tests and online validators to check the quality of my code and also to check the functionality of the project.
+
+---
+
+## Manual Testing
+
+### Stripe
+
+To test the checkout payments with card details in test mode, I used the following long card numbers:
+
+- 4242424242424242: for successful card payments (Visa)
+
+I used the above to successfully test Stripe and I am happy to say it is working as expected.
+
+<br></br>
+
+### Home/Index
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Logo/Home Link | Click on Logo at top of Page | Redirect to the home page | PASS |
+| All Products Link | Click on middle nav link | Opens Products Page | PASS |
+| Bracelet Link | Click on middle nav link  | Opens category bracelet Page | PASS |
+| Necklaces Link | Click on middle nav link  | Opens category necklaces Page | PASS |
+| Earings Link | Click on middle nav link  | Opens category earings Page | PASS |
+| Rings Link | Click on middle nav link  | Opens category rings Page | PASS |
+| Collections Click | Click on middle nav link | Opens dropdown with each collections links | PASS |
+| My account Icon | Click on nav link | Opens dropdown with other links | PASS |
+| Shopping bag Icon | Click on nav link | Opens Bag Page | PASS |
+| Shop Now Button | Click on index main section button | Opens Products Page | PASS |
+
+### Lisa Collection Section
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| See More Button | Click on index lisa Collection Section button | Redirect to the Lisa Collection page | PASS |
+
+### Contact Section
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Send Message Button | Click on index Contact Section button | Redirect to the Contact page | PASS |
+
+### Footer
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Media links | Click on link | Open blank page to the clicked link | PASS |
+
+### Contact
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Submit Form | Attempt to submit blank form with nothing filled in | Form validation will prevent form from sending and alert user to which input needs filling in | PASS |
+| Submit Form | Attempt to submit with just one input filled in  | Form validation will prevent form from sending and alert user to which input needs filling in | PASS |
+| Email input | Try to enter an invalid email address or random numbers, words etc.  | Form will not send and user will be informed to enter a valid email address | PASS |
+| Submit Valid Form | Submit a complete and valid contact form | Page redirects to  the same page and receive a success message | PASS |
+| Admin Panel | Check output of submission in the Admin Panel | All filled out information should be strored correctly in the database | PASS |
+
+### Profile
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Profile Link | Check appearance when logged out | Profile page is not accessible to users not logged in | PASS |
+| Profile Link | Check appearance and click on link when logged in | User will be redirected to their profile page | PASS |
+| Update Button | Click Update Button | The form will update and save | PASS |
+| Input fields | Enter invalid inputs for fields | User will get an error message | PASS |
+| Input fields | Enter Valid input for fields | User will be informed that it saved successfully | PASS |
+
+
+### Authentication
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Sign Up | Create an account | You will be asked to wait until the admin will check your email and confirm it | PASS |
+| Login | Login with a registered account | Redirected to homepage and informed you are logged in | PASS |
+| Remember me checkbox | Click on remember me checkbox button before loggin in | You will not need to login next time you visit the site | PASS |
+| Forgot Password | Click on Forget Password and submit email | Link to set new password sent to email address supplied by user | PASS |
+
+
+### Basket and Bag
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Basket Icon | Click on Basket icon in top nav | Redirects to bag page | PASS |
+| Basket Page with no items | Click on basket page with nothing in the basket | Item counter reads as 0 and user is informed that there are no items in the basket, summary is blank | PASS |
+| Item in Basket | Add item to basket and check that it appears in the items table | Chosen product will appear in the basket | PASS |
+| Multiple items in Basket | Add more than one item to the basket (both quantity and different products) | Quantities are implemented and counted and you are able to add all 3 different products to basket in any order | PASS |
+| Delete Item in basket | Click 'Delete button | Item is deleted from the basket | PASS |
+| Update Item in basket | Click 'Update' button | Item is updated from the basket | PASS |
+| Summary total Calculator | Add items to basket, change quantities, delete items from basket | total will adjust accordingly | PASS |
+| Summary VAT calculator | Add items to basket and check VAT calculation | 20% VAT applied automatically | PASS |
+| Checkout Button (Basket Page) | Add item to basket and click on the checkout button in the basket page | redirect to the stripe checkout | PASS |
+| Checkout validation | Attempt to submit checkout with inclomplete input fields | Checkout will not proceed until you have filled in all required fields | PASS |
+| Checkout Success | Visit checkout, fill in required fields and click 'Complete Order' | On successfull payment, you are redirected to the success page | PASS |
+| Checkout Fail | Attempt a failed checkout | Redirected to the same page, user is not charged, and receive erro message | PASS |
+| Order History Added/Updated | Checkout and visit order history page | Order is added to order history table in profile page | PASS |
+
+### Management
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Management Link | Login as Admin/Superuser and open profile dropdown | Management link visible and when clicked, redirect to the management add products page | PASS |
+| Submit Form | Complete valid form and click "Add Product" | Product is added to list of products on the products page and superuser receive a success mesage | PASS |
+| Image upload to AWS | On form submit, check new products detail | image on product detail is available due to automated image storage to AWS | PASS |
+| Superuser Access only | Try to access url as a non-admin | Receive a message saying you are not allowed to view this page | PASS |
+| Product list | Check Products list has new Product added post submission | new Product is visible with all data inputs added visible | PASS |
+| Form validation | Attempt to add invalid entries or incomplete form and submit | Form validation prevents submission until correctly filled out | PASS |
+
+### Product Cards
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Edit and Delete Buttons | Login as Admin/Superuser and open products page | Superuser can see edit and delete buttons for each product | PASS |
+| Edit Button (Product Card) | Click on edit button | Superuser is redirected to edit page and receive an alert message | PASS |
+| Delete Button | Click on edit button | Product is deleted after superuser confirms again that he want to delete | PASS |
+| Wishlist | Click on wishlist button | Product is added to wishlist page and user receive a succes message | PASS |
+| Product Card image | Click on product image | User/superuser is redirected to the detail product page | PASS |
+
+
+
+
+### Other
+| Test | Method | Expected Outcome | Result |
+| - | - | - | - |
+| Order History Link | click on link in Nav | Opens user order history page | PASS |
+| Order History Table | Make orders and view order history page | Orders will render in a table automatically and in chronological order | PASS |
+| Stripe Receipt Link | Click receipt link in the table | Redirects to Stripe receipt | PASS |
+
+
+---
+
+## HTML Validation
+
+All HTML validation was done using https://validator.w3.org/nu/
+
+
+### /templates 
+
+| File | Result |
+| -------- | ------ |
+| base.html | PASS |
+| main-nav.html  | PASS |
+| includes/base.html | PASS |
+| includes/toast_error.html  | PASS |
+| includes/toast_info.html  | PASS |
+| includes/toast_success.html  | PASS |
+| includes/toast_warning.html | PASS |
+
+### /trackdays
+
+| File | Result |
+| -------- | ------ |
+|  experience-detail.html | PASS |
+|  experiences.html | PASS |
+|  trackday-detail.html | PASS |
+|  trackday-list.html | PASS |
+|  trackday-request.html | PASS |
+|  tuition-detail.html | PASS |
+|  tuition.html | PASS |
+|  includes/increment_decrement.html | PASS |
+
+### /profiles
+
+| File | Result |
+| -------- | ------ |
+| profile.html  | PASS |
+
+### /home
+
+| File | Result |
+| -------- | ------ |
+| about.html  | PASS |
+| contact.html  | PASS |
+| faqs.html  | PASS |
+| index.html  | PASS |
+| policies.html  | PASS |
+| management.html  | PASS |
+| error404.html | PASS |
+| newsletter.html | PASS |
+
+### /checkout
+
+| File | Result |
+| -------- | ------ |
+| basket.html  | PASS |
+| cancel.html | PASS |
+| error.html | PASS |
+| success.html | PASS |
+| history.html | PASS |
+
+
+### /cars
+
+| File | Result |
+| -------- | ------ |
+| car-hire.html  | PASS |
+
+<br/><br/> 
+
+<details><summary> Main HTML Validation Screenshots</summary>
+
+#### Base.html, Main-nav.html and  Index.html
+![Base Template Validation](/static/images/readme-images/validation-images/base-index.html-val.png)
+
+#### experience-detail.html
+![Experience Detail Validation](/static/images/readme-images/validation-images/experience-detail.html-val.png)
+
+#### experiences.html
+![Experiences Validation](/static/images/readme-images/validation-images/experiences.html-val.png)
+
+#### trackday-detail.html
+![Trackday Detail Validation](/static/images/readme-images/validation-images/trackday-detail.html-val.png)
+
+#### trackday-list.html
+![Trackday List Validation](/static/images/readme-images/validation-images/trackday-list.html-val.png)
+
+#### trackday-request.html
+![Trackday Request Validation](/static/images//readme-images/validation-images/trackday-request.html-val.png)
+
+#### tuition-detail.html
+![Tuition Detail Validation](/static/images//readme-images/validation-images/tuition-detail.html-val.png)
+
+#### tuition.html
+![Tuition Validation](/static/images//readme-images/validation-images/tuition.html-val.png)
+
+#### profile.html
+![Profile Validation](/static/images//readme-images/validation-images/profile.html-val.png)
+
+#### about.html
+![About Validation](/static/images//readme-images/validation-images/about.html-val.png)
+
+#### contact.html
+![Contact Validation](/static/images//readme-images/validation-images/contact.html-val.png)
+
+#### faqs.html 
+![FAQS Validation](/static/images//readme-images/validation-images/faqs.html-val.png)
+
+
+#### policies.html
+![Policies Validation](/static/images//readme-images/validation-images/policies.html-val.png)
+
+#### management.html
+![Management Validation](/static/images//readme-images/validation-images/management.html-val.png)
+
+#### error404.html
+![Error 404 Validation](/static/images//readme-images/validation-images/error404-page-val.png)
+
+#### newsletter.html
+![Newsletter Validation](/static/images//readme-images/validation-images/newsletter.html-val.png)
+
+#### basket.html
+![Empty Basket Validation](/static/images//readme-images/validation-images/basket.html-empty-val.png)
+![Full Basket Validation](/static/images//readme-images/validation-images/basket.html-with-items-val.png)
+
+#### history.html
+![Order History Validation](/static/images//readme-images/validation-images/history.html-val.png)
+
+#### success.html
+![Checkout Success Validation](/static/images//readme-images/validation-images/success.html-val.png)
+
+#### cancel.html
+![Cancel Checkout Validation](/static/images//readme-images/validation-images/cancel.html-val.png)
+
+#### car-hire.html
+![Car Hire Page Validation](/static/images//readme-images/validation-images/car-hire.html-val.png)
+
+
+</details>
+
+<br/><br/> 
+
+### Current HTML Errors/Issues/Explanations:
+
+- Mostly just warnings for script tags having the ` type="text/javascript" ` attribute in them. This can be ignored.
+
+---
+
+## CSS Validation
+
+All CSS validation was done using https://jigsaw.w3.org/css-validator/
+
+### /static/css
+
+| File | Result |
+| -------- | ------ |
+| base.css  | PASS |
+
+
+### /trackdays/css
+
+| File | Result |
+| -------- | ------ |
+| booking-detail.css  | PASS  |
+| exp_detail.css  | PASS  |
+| experiences.css  | PASS  |
+| trackday-request.css  | PASS  |
+| trackdays.css  | PASS  |
+| tuition.css  | PASS  |
+
+### /profiles/css
+
+| File | Result |
+| -------- | ------ |
+| profiles.css  | PASS |
+
+### /home/css
+
+| File | Result |
+| -------- | ------ |
+| about.css  | PASS |
+| contact.css  | PASS |
+| index.css  | PASS |
+| management.css  | PASS |
+| newsletter.css  | PASS |
+
+### /basket/css
+
+| File | Result |
+| -------- | ------ |
+| basket.css  | PASS |
+| history.css  | PASS |
+
+### cars/css
+
+| File | Result |
+| -------- | ------ |
+| cars.css  | PASS |
+
+
+<br/><br/> 
+
+<details><summary>CSS Validation Screenshots</summary>
+
+#### base.css
+![Base CSS Validation](/static/images//readme-images/validation-images/base.css-val.png)
+
+#### booking-detail.css
+![Booking Detail CSS Validation](/static/images//readme-images/validation-images/booking-detail.css-val.png)
+
+#### exp_detail.css
+![Experience Detail CSS Validation](/static/images//readme-images/validation-images/exp_detail.css-val.png)
+
+#### experiences.css
+![Experiences CSS Validation](/static/images//readme-images/validation-images/experiences.css-val.png)
+
+#### trackday-request.css
+![Trackday Request CSS Validation](/static/images//readme-images/validation-images/trackday-request.css-val.png)
+
+#### trackdays.css
+![Trackdays CSS Validation](/static/images//readme-images/validation-images/trackdays.css-val.png)
+
+#### tuition.css
+![Tuition CSS Validation](/static/images//readme-images/validation-images/tuition.css-val.png)
+
+#### profiles.css
+![Profiles CSS Validation](/static/images//readme-images/validation-images/profiles.css-val.png)
+
+#### about.css 
+![About CSS Validation](/static/images//readme-images/validation-images/about.css-val.png)
+
+#### contact.css
+![Contact CSS Validation](/static/images//readme-images/validation-images/contact.css-val.png)
+
+#### index.css 
+![Index CSS Validation](/static/images//readme-images/validation-images/index.css-val.png)
+
+#### management.css
+![Management CSS Validation](/static/images//readme-images/validation-images/management.css-val.png)
+
+#### newsletter.css
+![Newsletter CSS Validation](/static/images//readme-images/validation-images/newsletter.css-val.png)
+
+#### basket.css 
+![Basket CSS Validation](/static/images//readme-images/validation-images/basket.css-val.png)
+
+#### history.css
+![History CSS Validation](/static/images//readme-images/validation-images/history.css-val.png)
+
+#### cars.css
+![Cars CSS Validation](/static/images//readme-images/validation-images/cars.css-val.png)
+
+</details>
+
+<br/><br/> 
+
+### Current CSS Errors/Issues/Explanations:
+
+- No issues at all to report.
+
+---
+
+## JS Validation
+
+I cross-referenced JS Validation using two different Validation services:
+- https://jshint.com/
+- https://jsvalidator.com/
+
+I did find this particularly useful as some files generated warnings on one validator (perhaps due to over-sensitivity) and passed with zero errors on another.
+I have included different screenshots to demonstrate this and show that the JS is valid and working.
+
+
+### profiles/js
+
+| File | Result |
+| -------- | ------ |
+| profile.js | PASS |
+
+### home/js
+
+| File | Result |
+| -------- | ------ |
+| base.js  | PASS |
+
+<br/><br/> 
+
+<details><summary>JS Validation Screenshots</summary>
+
+#### profile.js
+![Profile Page JS](/static/images/readme-images/validation-images/profiles.js-val.png)
+
+#### base.js
+![Base JS](/static/images//readme-images/validation-images/base.js-val.png)
+![Base JS](/static/images//readme-images/validation-images/base.js-js-val.png)
+
+#### increment-decrement js
+![Increment and Decrement JS](/static/images/readme-images/validation-images/increment-decrement-script-js-val.png)
+
+#### basket js
+![Basket JS](/static/images/readme-images/validation-images/basket-js-script-val.png)
+
+#### Management js
+![Management JS](/static/images/readme-images/validation-images/management-js-script-val.png)
+
+#### Trackday Detail js
+![Trackday Detail JS](/static/images/readme-images/validation-images/trackday-detail-js-script-val.png)
+
+#### Bootstrap Toast js
+![Bootstrap Toast JS](/static/images/readme-images/validation-images/bootstrap-toasts-js-val.png)
+![Bootstrao Toast JS](/static/images/readme-images/validation-images/bootstrap-toasts-js-js-val.png)
+
+Extra JS in includes/toasts html files:
+![Extra JS](/static/images/readme-images/validation-images/extra-toast-js.png)
+
+
+</details>
+
+<br/><br/> 
+
+### Current JS Errors/Issues/Explanations:
+
+- As you can see from the screen shots, the same code on one js linter can be more sensitive towards things than others. I have included cases like this above for transparency and to prove I have tested across more than one JS linter.
+
+
+---
+
+## Python Validation
+
+All Python validation was checked through Code Institute's PEP8 Python Linter. You can find it via this link: https://pep8ci.herokuapp.com/
+
+### /django_raceway
+
+
+| File | Result |
+| -------- | ------ |
+| settings.py | PASS |
+| urls.py | PASS |
+
+
+### /trackdays
+
+| File | Result |
+| -------- | ------ |
+| admin.py | PASS |
+| models.py | PASS |
+| urls.py | PASS |
+| views.py | PASS |
+| tests.py | PASS |
+
+
+
+### /profiles
+
+| File | Result |
+| -------- | ------ |
+| admin.py | PASS |
+| models.py | PASS |
+| urls.py | PASS |
+| views.py | PASS |
+| tests.py | PASS |
+
+
+
+### /home
+
+| File | Result |
+| -------- | ------ |
+| admin.py | PASS |
+| models.py | PASS |
+| urls.py | PASS |
+| views.py | PASS |
+
+
+
+### /checkout
+
+| File | Result |
+| -------- | ------ |
+| admin.py | PASS |
+| contexts.py | PASS |
+| models.py | PASS |
+| urls.py | PASS |
+| views.py | PASS* |
+| helpers.py | PASS |
+| tests.py | PASS |
+
+* Line 313 in views.py reads as too long, however, for reliability I have opted to leave this
+in as it can cause issues in deployment when concatenated as it is an image url. I believe this is
+a sensible and reasonable precaution to take for site reliability in conjunction with stripe.
+See further explanation below.
+
+
+### /cars
+
+| File | Result |
+| -------- | ------ |
+| admin.py | PASS |
+| models.py | PASS |
+| urls.py | PASS |
+| views.py | PASS |
+| tests.py | PASS |
+
+<br/><br/> 
+
+<details><summary>Python Validation Screenshots</summary>
+
+#### /django_raceway
+
+![settings.py](/static/images/readme-images/validation-images/django_raceway-settings.py-val.png)
+![urls.py](/static/images/readme-images/validation-images/django_raceway-urls.py-val.png)
+
+
+#### /trackdays
+
+![admin.py](/static/images/readme-images/validation-images/trackdays-admin.py-val.png)
+![models.py](/static/images/readme-images/validation-images/trackdays-models.py-val.png)
+![urls.py](/static/images/readme-images/validation-images/trackdays-urls.py-val.png)
+![views.py](/static/images/readme-images/validation-images/trackdays-views.py-val.png)
+
+
+#### /home
+
+![admin.py](/static/images/readme-images/validation-images/home-admin.py-val.png)
+![models.py](/static/images/readme-images/validation-images/home-models.py-val.png)
+![urls.py](/static/images/readme-images/validation-images/home-urls.py-val.png)
+![views.py](/static/images/readme-images/validation-images/home-views.py-val.png)
+
+
+#### /profiles
+
+![admin.py](/static/images/readme-images/validation-images/profiles-admin.py-val.png)
+![models.py](/static/images/readme-images/validation-images/profiles-models.py-val.png)
+![urls.py](/static/images/readme-images/validation-images/profiles-urls.py-val.png)
+![views.py](/static/images/readme-images/validation-images/profiles-views.py-val.png)
+
+#### /checkout
+
+![admin.py](/static/images/readme-images/validation-images/checkout-admin.py-val.png)
+![models.py](/static/images/readme-images/validation-images/checkout-models.py-val.png)
+![urls.py](/static/images/readme-images/validation-images/checkout-urls.py-val.png)
+![views.py](/static/images/readme-images/validation-images/checkout-views.py-val.png)
+![views.py 2](/static/images/readme-images/validation-images/checkout-views.py-line-too-long.png)
+![contexts.py](/static/images/readme-images/validation-images/checkout-contexts.py-val.png)
+![helpers.py](/static/images/readme-images/validation-images/checkout-helpers.py-val.png)
+
+
+#### /cars
+
+![admin.py](/static/images/readme-images/validation-images)
+![models.py](/static/images/readme-images/validation-images)
+![urls.py](/static/images/readme-images/validation-images)
+![views.py](/static/images/readme-images/validation-images)
+![tests.py](/static/images/readme-images/validation-images)
+
+
+</details>
+
+<br/><br/> 
+
+### Current Python Errors/Issues/Explanations:
+
+- Only 1 known python linting issue across the entire workspace, being that of line 313 in /checkout/views.py where a line is too long.
+Due to this being a url, and a pretty specific one from Stripe as well, I opted to follow best practice and to leave it as is for this one exception in order 
+to ensure reliability of the checkout on the site. I believe reliability takes priority over anything else.
+I am very much following [this Principal](https://peps.python.org/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds)
+
+
+---
+
+## Lighthouse Performance Testing
+
+- Lighthouse Testing was performed in an incognito tab to ensure no external chrome add-ons were affecting the test.
+- I did the test 3 times to see how consistent the tests were.
+- Results of the Lighthouse Performance testing below:
+
+**Test 1**
+![Test 1](/static/images/readme-images/validation-images/lighthouse-testing.png)
+**Test 2**
+![Test 2](/static/images/readme-images/validation-images/lighthouse-testing-2.png)
+**Test 3**
+![Test 3](/static/images/readme-images/validation-images/lighthouse-testing-3.png)
+
+- As you can see, there is quite a bit of variation in the test results. However, taking an average of the scores from the 3 tests, I am fairly happy with the performance of the site overall.
+
+---
+
+## Device and Browser Testing
+
+- Browsers Tested:
+    - Google Chrome
+    - Safari
+
+- Devices Tested:
+    - MacBook Pro
+    - Apple iPhone 12 Pro
+    - iPhone 14 Pro
+    - iPhone X
+    - iPad Pro
+
+
+
+### Responsiveness
+
+- The site has been tested down to screen widths of 320px and up to screen widths of 2560px
+- The site is fully responsive between these viewport widths
+
+---
+
+
+## Current known and unresolved issues
+
+- As documented in the outstanding bugs section in the readme, there is an (as of writing) unresolved bug where when you sign in or log out, the sign in and log out buttons can appear to not be clickable. This is always able to be fixed by either refreshing the page or clicking on to another link/page. Alternatively, click on the site logo (which redirects to the home page anyway) to clear this bug. This may not happen to you at all or it may happen to you randomly.
+- My Trackday Constraint in my Trackday model appears to not work realiably. I have tried various combinations of the code, tried to reformat it countless times and tried to use it in conjunction with adding ` unique=True` in the fields that are supposed to work with it. I have yet to resolve this issue and will aim to do so in a future update.
+- If you visit the site too often, you may find you need to hard refresh or clear the cache on some pages, especially the checkout page I find. This can be avoided entirely by using an incognito tab in your browser.
+
+
+--- 
+
+[Return to Top](#manual-and-automated-testing)
+
+
 
 
 

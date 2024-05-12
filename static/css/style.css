@@ -190,7 +190,7 @@ body {
 
 .product-inner-box img {
     box-shadow: 0 33px 61px -29px rgba(0, 0, 0, 0.623);
-    height: 350px;
+
     width: 100%;
     object-fit: cover;
 
@@ -790,6 +790,12 @@ input:checked + .rate label:hover, input:checked ~ .rate label:hover, input:chec
     
     .paragraf {
         font-size: 1rem;
+    }
+
+    
+
+    .lisa-collection p {
+        font-size: 1.5rem;
     }
 }
 

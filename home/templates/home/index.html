@@ -5,7 +5,7 @@
 
 <!-- HOME Section -->
 <section id="home">
-  <div class="masthead" alt="necklace half pearls half gold"
+  <div class="masthead"
     style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/necklace-white-shirt.png')">
     <div class="color-overlay d-flex justify-content-center align-items-center text-center">
       <h1 class="title1">Your dream in</h1>
@@ -85,7 +85,7 @@
 <!-- Upcoming Collection Section -->
 
 <section class="upcoming-collection">
-  <div class="masthead background-image" alt="golden jewelry - golden drop earings"
+  <div class="masthead background-image"
     style="background-image: url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/drop-earring.png');">
     <div class="up-coll container-fluid ">
       <div class="centered row">
@@ -125,14 +125,14 @@
 <section class="lisa-collection">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <h2>Lisa Collection</h2> 
+      <h2 class="text-center">Lisa Collection</h2>
     </div>
     <p class="text-center">Golden luxury jewelry</p>
     <div class="row">
       <div class="col-lg-4 col-md-4 mb-3">
         <div class="product-box">
           <div class="product-inner-box position-relative">
-              <img class="img-fluid" src="{{ MEDIA_URL }}lisa1.png">
+            <img class="img-fluid" src="{{ MEDIA_URL }}lisa1.png">
           </div>
 
           <div class="product-info">
@@ -147,7 +147,7 @@
       <div class="col-lg-4 col-md-4 mb-3">
         <div class="product-box">
           <div class="product-inner-box position-relative">
-              <img class="img-fluid" src="{{ MEDIA_URL }}lisa2.png">
+            <img class="img-fluid" src="{{ MEDIA_URL }}lisa2.png">
           </div>
 
           <div class="product-info">
@@ -162,9 +162,9 @@
       <div class="col-lg-4 col-md-4 mb-3">
         <div class="product-box">
           <div class="product-inner-box position-relative">
-                  <img class="img-fluid" src="{{ MEDIA_URL }}lisa3.png">
+            <img class="img-fluid" src="{{ MEDIA_URL }}lisa3.png">
           </div>
-           <div class="product-info">
+          <div class="product-info">
             <div class="product-name">
               Luminous Gold Leaf
             </div>
@@ -238,7 +238,6 @@
 
 <section id="contact">
 
-  <div>
     <!--curve-->
     <div class="custom-shape-divider-top-1714221927">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -254,50 +253,52 @@
       </svg>
     </div>
     <!--curve ends here-->
-  <div class="col-md-12">
-    <div class="bg-image" style="background-image:  url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/contact-bckg.png')" alt="gold jewelry - gold bracelet"></div>
-  </div>
-
-
-  <div class="container text-center">
-    <div class="row mt-4">
-
-      <div class="col-xl-3 col-md-4 col-sm-12  text-start">
-        <h6 class=" mt-5 pb-2">SELINE & TAM</h6>
-        <a href="{% url 'home:contact_form' %}" class="h2 btn btn-black my-5">Send a message</a>
-      </div>
-
-      <div class="col-xl-3 col-md-6 col-sm-12">
-        <h4>LOCATION</h4>
-        <h5>123 Aniwhere St., Any City, State, Country</h5>
-      </div>
-
-      <div class="col-xl-3 col-md-5 col-sm-12 text-sm-start">
-        <h4 class="ms-sm-5">EMAIL ADDRESS</h4>
-        <h5 class="ms-sm-5">selineandtamjewelry@gmail.com</h5>
-      </div>
-
-      <div class="col-xl-3 col-md-7 col-sm-12 ps-lg-5">
-        <h4>PHONE NUMBER</h4>
-        <h5>(123) 456 7890</h5>
+    <div class="col-md-12">
+      <div class="bg-image"
+        style="background-image:  url('https://seline-and-tam-jewelry.s3.eu-north-1.amazonaws.com/media/contact-bckg.png')">
       </div>
     </div>
-  </div>
 
+
+
+    <div class="container text-center">
+      <div class="row mt-4">
+
+        <div class="col-xl-3 col-md-4 col-sm-12  text-start">
+          <h6 class=" mt-5 pb-2">SELINE & TAM</h6>
+          <a href="{% url 'home:contact_form' %}" class="h2 btn btn-black my-5">Send a message</a>
+        </div>
+
+        <div class="col-xl-3 col-md-6 col-sm-12">
+          <h4>LOCATION</h4>
+          <h5>123 Aniwhere St., Any City, State, Country</h5>
+        </div>
+
+        <div class="col-xl-3 col-md-5 col-sm-12 text-sm-start">
+          <h4 class="ms-sm-5">EMAIL ADDRESS</h4>
+          <h5 class="ms-sm-5">selineandtamjewelry@gmail.com</h5>
+        </div>
+
+        <div class="col-xl-3 col-md-7 col-sm-12 ps-lg-5">
+          <h4>PHONE NUMBER</h4>
+          <h5>(123) 456 7890</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Google API Map -->
+    <div class="container mb-5 mt-5">
+      <div class="card">
+        <div class="row ">
+          <div class="col-lg-12">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </section>
-
-<!-- Google API Map -->
-<div class="container mb-4 mt-5">
-  <div class="card">
-    <div class="row">
-        <div class="col-lg-12">
-            <div id="map"></div>
-        </div>
-    </div>
-  </div>
-  </div>
-
 
 {% endblock %}
 
@@ -310,18 +311,18 @@
 
 <script>
   function initMap() {
-      var location = {
-          lat: -25.363,
-          lng: 131.044
-      };
-      var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: location
-      });
-      var marker = new google.maps.Marker({
-          position: location,
-          map: map
-      });
+    var location = {
+      lat: -25.363,
+      lng: 131.044
+    };
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: location
+    });
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
   }
 </script>
 

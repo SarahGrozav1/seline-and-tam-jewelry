@@ -12,12 +12,12 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import dj_database_url
 from pathlib import Path
+import env
 
 if os.path.exists("env.py"):
-  import env 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+    # Build paths inside the project like this: BASE_DIR / 'subdir'.
+    BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 
-ALLOWED_HOSTS = ['seline-and-tam-jewelry-ef3ef903eb25.herokuapp.com','8000-sarahgrozav-selineandta-uq878y77ztn.ws-eu111.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['seline-and-tam-jewelry-ef3ef903eb25.herokuapp.com',
+                 '8000-sarahgrozav-selineandta-uq878y77ztn.ws-eu111.gitpod.io',
+                 'localhost']
 
 
 # Application definition
@@ -84,11 +86,11 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-                'shpbag.contexts.shpbag_contents',          
+                'shpbag.contexts.shpbag_contents',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
-                'crispy_forms.templatetags.crispy_forms_field', 
+                'crispy_forms.templatetags.crispy_forms_field',
             ]
         },
     },
@@ -141,16 +143,20 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttribute\
+        SimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+        MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+        CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.\
+        NumericPasswordValidator',
     },
 ]
 
@@ -184,7 +190,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94678000',
     }
-    
+
     # Bucket config
     AWS_STORAGE_BUCKET_NAME = 'seline-and-tam-jewelry'
     AWS_S3_REGION_NAME = 'eu-north-1'
@@ -197,8 +203,8 @@ if 'USE_AWS' in os.environ:
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
-    
-    #Override static and media URLs in production
+
+    # Override static and media URLs in production
     STATIC_URL = 'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 

@@ -64,7 +64,6 @@ body {
 
 /* Home Section */
 
-
 .masthead {
     background-position: center;
     background-size: cover;
@@ -100,7 +99,7 @@ body {
 /* About Section */
 
 #about {
-    position: relative important;
+    position: relative;
     background: #f1e9e4;
     overflow: hidden;
 }
@@ -791,8 +790,6 @@ input:checked + .rate label:hover, input:checked ~ .rate label:hover, input:chec
     .paragraf {
         font-size: 1rem;
     }
-
-    
 
     .lisa-collection p {
         font-size: 1.5rem;

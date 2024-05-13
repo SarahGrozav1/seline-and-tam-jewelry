@@ -4,6 +4,7 @@ from .models import Contact
 
 # Create your views here.
 
+
 def index(request):
     """ A view to return the index page """
 
@@ -12,7 +13,7 @@ def index(request):
 
 def contact_form(request):
     """ A view for contact form """
-    
+
     if request.method == "POST":
         contact = Contact()
         name = request.POST.get('name')
@@ -21,7 +22,6 @@ def contact_form(request):
         contact.name = name
         contact.email = email
         contact.subject = subject
-        contact.save()  
+        contact.save()
         messages.success(request, 'Thank you for contacting us')
     return render(request, 'home/contact.html')
-

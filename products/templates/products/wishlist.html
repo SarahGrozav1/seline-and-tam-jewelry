@@ -3,37 +3,37 @@
 
 {% block content %}
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mt-3">
-                {% for c in current_categories %}
-                    <!-- <a class="category-badge text-decoration-none" href="{% url 'products:products' %}?category={{ c.name }}"> -->
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark"></span>
-                    <!-- </a> -->
-                {% endfor %}
-                
-            </div>
-        </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            {% for c in current_categories %}
+            <!-- <a class="category-badge text-decoration-none" href="{% url 'products:products' %}?category={{ c.name }}"> -->
+            <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark"></span>
+            <!-- </a> -->
+            {% endfor %}
 
-  <h1 class="logo-font m-5 text-center">My Wishlist</h1>
-  <hr class="w-50 mb-1">
-  <br>
-  <div class="row">
-    <div class="product-container col-10 offset-1">
-        <div class="row mt-1 mb-2">
-            <div class="col-12 col-md-6 order-md-first">
-                <p class="text-muted mt-3 text-center text-md-left">                   
-                   <strong>{{ wishlist.products.all|length }} Products in Wishlist</strong>
-                </p>
+        </div>
+    </div>
+
+    <h1 class="logo-font m-5 text-center">My Wishlist</h1>
+    <hr class="w-50 mb-1">
+    <br>
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row mt-1 mb-2">
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        <strong>{{ wishlist.products.all|length }} Products in Wishlist</strong>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-  </div>
 
-  {% if wishlist %}
-  <div class="row justify-content-center">
-    {% for product in wishlist.products.all %}  
-      
+    {% if wishlist %}
+    <div class="row justify-content-center">
+        {% for product in wishlist.products.all %}
+
         <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
             <div class="card h-100 border-0">
                 {% if product.image %}
@@ -54,21 +54,22 @@
                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                             {% if product.collections %}
                             <p class="small mt-1 mb-0">
-                                <a class="text-muted" href="{% url 'products:products' %}?collections={{ product.collections.name }}">
+                                <a class="text-muted"
+                                    href="{% url 'products:products' %}?collections={{ product.collections.name }}">
                                     <i class="fas fa-tag mr-1"></i>{{ product.collections.friendly_name }}
                                 </a>
                             </p>
                             {% endif %}
                             {% if product.rating %}
-                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ average }} / 5.0</small>
+                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ average }} / 5.0</small>
                             {% else %}
-                                <small class="text-muted">No Rating</small>
+                            <small class="text-muted">No Rating</small>
                             {% endif %}
                             {% if request.user.is_superuser %}
-                                <small class="ml-3">
-                                    <a href="{% url 'products:edit_product' product.id %}">Edit</a>
-                                    <a class="text-danger" href="{% url 'products:delete_product' product.id %}">Delete</a>
-                                </small>
+                            <small class="ml-3">
+                                <a href="{% url 'products:edit_product' product.id %}">Edit</a>
+                                <a class="text-danger" href="{% url 'products:delete_product' product.id %}">Delete</a>
+                            </small>
                             {% endif %}
                         </div>
                     </div>
@@ -76,37 +77,38 @@
                 {% if user.is_authenticated %}
                 <form action="{% url 'products:remove_from_wishlist' product.id %}" method="POST">
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-sm btn-danger w-25 p-2"><i class="fa fa-trash" style="color: #fff;"></i></button>
-                </form>  
+                    <button type="submit" class="btn btn-sm btn-danger w-25 p-2"><i class="fa fa-trash"
+                            style="color: #fff;"></i></button>
+                </form>
                 {% endif %}
             </div>
         </div>
         {% if forloop.counter|divisibleby:1 %}
-            <div class="col-12 d-sm-none mb-5">
-                <hr>
-            </div>
-        {% endif %}                        
+        <div class="col-12 d-sm-none mb-5">
+            <hr>
+        </div>
+        {% endif %}
         {% if forloop.counter|divisibleby:2 %}
-            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                <hr>
-            </div>
+        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+            <hr>
+        </div>
         {% endif %}
         {% if forloop.counter|divisibleby:3 %}
-            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                <hr>
-            </div>
+        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+            <hr>
+        </div>
         {% endif %}
         {% if forloop.counter|divisibleby:4 %}
-            <div class="col-12 d-none d-xl-block mb-5">
-                <hr>
-            </div>
+        <div class="col-12 d-none d-xl-block mb-5">
+            <hr>
+        </div>
         {% endif %}
 
-    {% endfor %}
-  </div>
-{% else %}
-<p>You don't have anything in your wishlist yet.</p>
-{% endif %}
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>You don't have anything in your wishlist yet.</p>
+    {% endif %}
 
 </div>
 {% endblock %}

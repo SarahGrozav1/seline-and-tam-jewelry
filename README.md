@@ -52,7 +52,7 @@
     + [Why use Mailchimp?](#why-use-mailchimp-)
     + [How does Mailchimp work?](#how-does-mailchimp-work-)
 - [**11. Testing**](#--11-testing--)
-- [Manual Testing](#manual-testing)
+  * [Manual Testing](#manual-testing)
     + [Stripe](#stripe)
     + [Home/Index](#home-index)
     + [Lisa Collection Section](#lisa-collection-section)
@@ -74,6 +74,13 @@
     + [/shpbag](#-shpbag)
     + [/checkout](#-checkout)
       - [Base.html, Main-nav.html, Index.html](#basehtml--main-navhtml--indexhtml)
+      - [products.html](#productshtml)
+      - [detail_product.html](#detail-producthtml)
+      - [profile.html](#profilehtml)
+      - [wishlist.html](#wishlisthtml)
+      - [bag.html](#baghtml)
+      - [checkout.html](#checkouthtml)
+      - [contact.html](#contacthtml)
     + [Current HTML Errors/Issues/Explanations:](#current-html-errors-issues-explanations-)
   * [CSS Validation](#css-validation)
     + [/static/css](#-static-css)
@@ -713,7 +720,7 @@ I used **DBeaver** to map out an ER Diagram for my Database Schema:
 
 ---
 
-# **8. Technologies Used**
+# **9. Technologies Used**
 
 Full list of technology implemented below:
 
@@ -741,7 +748,7 @@ Full list of technology implemented below:
 
 ---
 
-# **9. Python Packages Installed**
+# **10. Python Packages Installed**
 
 
 - asgiref==3.7.2
@@ -768,7 +775,7 @@ Full list of technology implemented below:
 
 ---
 
-# **10. The Mailchimp**
+# **11. The Mailchimp**
 
 - [Mailchimp Site](https://mailchimp.com/)
 
@@ -790,9 +797,9 @@ Full list of technology implemented below:
 
 ---
 
-# **11. Testing**
+# **12. Testing**
 
-# Manual Testing
+## Manual Testing
 
 This section of the documentation comprises of various manual tests and online validators to check the quality of my code and also to check the functionality of the project.
 
@@ -996,6 +1003,26 @@ All HTML validation was done using https://validator.w3.org/nu/
 #### Base.html, Main-nav.html, Index.html
 ![Base Template Validation]()
 
+#### products.html
+![Products Template Validation]()
+
+#### detail_product.html
+![Detail Product Template Validation]()
+
+#### profile.html
+![Profile Template Validation]()
+
+#### wishlist.html
+![Wishlist Template Validation]()
+
+#### bag.html
+![Bag Template Validation]()
+
+#### checkout.html
+![Checkout Template Validation]()
+
+#### contact.html
+![Contact Template Validation]()
 
 </details>
 
@@ -1284,7 +1311,7 @@ This can be mitigated entirely by using an incognito tab in your browser.
 
 ---
 
-# **12. Deployment**
+# **13. Deployment**
 
 ### Pre-flight checks before starting:
 - Please make sure you have **all** of the following before beginning with the below steps:
@@ -1356,14 +1383,14 @@ This can be mitigated entirely by using an incognito tab in your browser.
 
 ---
 
-# **13. Peer Reviews**
+# **14. Peer Reviews**
 
 - The site has been shared with friends and family to get feedback and constructive criticism. 
 - I have also had my project reviewed by my course mentor in 3 stages of the development cycle. 
 
 ---
 
-# **14. Credits**
+# **15. Credits**
 
 ### Code Help:
 
@@ -1413,7 +1440,7 @@ I used Canva for designing my project and there I have made a color pallete. The
 
 ---
 
-# **15. Final Thoughts**
+# **16. Final Thoughts**
 
 This is my fifth and final project with Code Institute. A Full-Stack E-commerce jewelry business, selling jewelries and developed using the Django Framework, AWS, Heroku and Stripe. Written with HTML, CSS, Python and Javascript (JQuery).
 

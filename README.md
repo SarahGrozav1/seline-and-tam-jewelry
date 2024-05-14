@@ -451,7 +451,7 @@ Below is a comprehensive list of the site features and their relations to the us
 
       - Contains a API Map
     
-    ![Contact Section](/static/media/documents/map.png)
+    ![Map Section](/static/media/documents/map.png)
 
     - Acceptance Criteria:
 
@@ -459,15 +459,18 @@ Below is a comprehensive list of the site features and their relations to the us
 
   - Footer:
 
+      - Contains Subscribe to Newsletter
       - Contains a hr to separate the page from footer
+      - Contains hour for when it's opened the store
       - Contains five social media icons
       - Contains a copyright text
     
-    ![Contact Section](/static/media/documents/footer.png)
+    ![Footer Section](/static/media/documents/footer.png)
 
     - Acceptance Criteria:
 
       - Have social media links inclusive business facebook page for users to find more informations about store and products such as new collections, reviews and owners story.
+      - Have a form for subscribing to newsletter for user to receive monthly emails with discount codes and new collections arriving.
 
 3. A Contact Page that:
     - Contains navbar

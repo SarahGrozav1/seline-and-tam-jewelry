@@ -1246,7 +1246,43 @@ This can be mitigated entirely by using an incognito tab in your browser.
 
 ---
 
+# **13. Peer Reviews**
+
+- The site has been shared with friends and family to get feedback and constructive criticism. 
+- I have also had my project reviewed by my course mentor in 3 stages of the development cycle. 
+
+---
+
+# **14. Credits**
+
+### Code Help:
+
+The preliminary set up and an assisting walkthrough came in the form of following Code Institute's Boutique Ado walkthrough e-commerce project. Repository can be found here: [Boutique Ado - Code Institute](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
+
+I used the Bootstrap 4 framework. 
+The following from the documentation helped me:
+- Navigation:
+    - [Bootstrap Navbar docs](https://getbootstrap.com/docs/4.0/components/navbar/)
+- Cards: 
+    - [Bootstrap Cards](https://getbootstrap.com/docs/4.0/components/card/)
 
 
+For general Bootstrap tips and information, I frequently referred to the [GetBootstrap](https://getbootstrap.com/) documentation, the [mdbootstrap](https://mdbootstrap.com/docs/) documentation and the [W3Schools](https://www.w3schools.com/bootstrap5/index.php) bootstrap documentation.
 
+Favicons were generated on [Favicon.io](https://favicon.io) - I choosed one icon from there.
+
+I made use of Icons from [Font Awesome](https://fontawesome.com/) using their free student plan. 
+All icons used in this project have come from here.
+
+Some of the logic for my increment/decrement buttons on the track day detail page were inspired by answers from this stackoverflow thread: [Stackoverflow js +/-](https://stackoverflow.com/questions/9186346/javascript-onclick-increment-number)
+
+Very useful tips and instructions for reseting DB migrations and faking initial migrations to prevent issues: [Simpleisbetterthancomplex migrations reset](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-reset-migrations.html)
+
+I have used shape dividers in my project from here: [Shape Divider](https://www.shapedivider.app/)
+
+I used this very helpful guide for importing the data from my ElephantSQL database into DBeaver to map out my database Schema: [Amis Technology Blog](https://technology.amis.nl/database/quick-start-with-free-managed-postgresql-database-on-elephantsql/)
+
+I generated my sitemap.xml using the steps from Boutique Ado Project from [this site](http://www.check-domains.com/sitemap/index.php)
+
+I generated my robots.txt file using the steps from Boutique Ado Project from [this site](https://www.seoptimer.com/robots-txt-generator)
     

@@ -6,7 +6,8 @@ from django.contrib.auth.models import User
 
 
 class Category(models.Model):
-
+    """A category model for maintaining default
+    category information"""
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -21,6 +22,8 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """A product model for maintaining product
+       information"""
     collections = models.ForeignKey('Collections', null=True, blank=True,
                                     on_delete=models.SET_NULL)
     category = models.ForeignKey('Category', null=True, blank=True,
@@ -38,6 +41,8 @@ class Product(models.Model):
 
 
 class Collections(models.Model):
+    """A collections model for maintaining collection
+       information"""
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -49,6 +54,8 @@ class Collections(models.Model):
 
 
 class ReviewRating(models.Model):
+    """A review/rating model for maintaining review/rating
+       information"""
     user = models.ForeignKey(UserProfile, models.CASCADE)
     product = models.ForeignKey(Product, models.CASCADE)
     comment = models.TextField(max_length=300)
@@ -59,8 +66,9 @@ class ReviewRating(models.Model):
         return str(self.id)
 
 
-# Wishlist
 class Wishlist(models.Model):
+    """A wishlist model for maintaining wishlist
+       information"""
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     products = models.ManyToManyField('Product')
     created_on = models.DateTimeField(auto_now_add=True)
@@ -70,6 +78,8 @@ class Wishlist(models.Model):
 
 
 class WishlistItem(models.Model):
+    """A wishlist item model for maintaining wishlist item
+       information of each product added to wishlist"""
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     added_at = models.DateTimeField(auto_now_add=True)

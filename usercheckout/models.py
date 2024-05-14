@@ -11,6 +11,9 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """
+    A order model for maintaining users address/order information
+    """
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True,
                                      related_name='orders')

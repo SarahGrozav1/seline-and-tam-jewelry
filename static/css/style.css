@@ -279,6 +279,7 @@ body {
     position: relative;
     font-family: Playfair Display, sans-serif;
     background: #d6cfcb;
+
 }
 
 #contact .bg-image {
@@ -323,7 +324,22 @@ body {
 #map {
     height: 500px;
     width: 100%;
+}
 
+/* Mailchimp */
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
+}
+
+/* Footer */
+
+footer h2 {
+    font-family: Playfair Display, sans-serif;
+    font-size: 2rem;
 }
 
 /* Contact Form Page */

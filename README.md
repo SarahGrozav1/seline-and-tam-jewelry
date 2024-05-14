@@ -1002,28 +1002,34 @@ All HTML validation was done using https://validator.w3.org/nu/
 <details><summary> Main HTML Validation Screenshots</summary>
 
 #### Base.html, Main-nav.html, Index.html
-![Base Template Validation]()
+![Base Template Validation](/static/media/documents/index-val.png)
 
 #### products.html
-![Products Template Validation]()
+![Products Template Validation](/static/media/documents/products-val.png)
 
 #### detail_product.html
-![Detail Product Template Validation]()
+![Detail Product Template Validation](/static/media/documents/detail-product-val.png)
 
 #### profile.html
-![Profile Template Validation]()
+![Profile Template Validation](/static/media/documents/profile-val.png)
+
+#### add_product.html
+![Products management Template Validation](/static/media/documents/management-val.png)
 
 #### wishlist.html
-![Wishlist Template Validation]()
+![Wishlist Template Validation](/static/media/documents/wishlist-val.png)
 
 #### bag.html
-![Bag Template Validation]()
+![Bag Template Validation](/static/media/documents/bag-val.png)
 
 #### checkout.html
-![Checkout Template Validation]()
+![Checkout Template Validation](/static/media/documents/checkout-val.png)
+
+#### success_checkout.html
+![Success Checkout Template Validation](/static/media/documents/success-checkout-val.png)
 
 #### contact.html
-![Contact Template Validation]()
+![Contact Template Validation](/static/media/documents/contact-val.png)
 
 </details>
 
@@ -1031,7 +1037,8 @@ All HTML validation was done using https://validator.w3.org/nu/
 
 ### Current HTML Errors/Issues/Explanations:
 
-- Mostly just warnings for script tags having the ` type="text/javascript" ` attribute in them. This can be ignored.
+- For Product Management page it shows me an error about duplicated id but there is not in my code.
+- As well for the checkout page there is an error but it can't be seen in my code. My mentor checked this as well and couldn't find this error in my code.
 
 ---
 

@@ -86,10 +86,10 @@ Here is an early mockup of my collections page which I decided to don't make it 
 
 # **4. User Experience (UX)**
 
-### **4.1.1 The Idea**
+### The Idea
 - The intention of **Seline & Tam Jewelry** site is to be friendly online shop where users can browse variate of products sorted between categories. Besides that, user can read details of each product, see product reviews and comments.
 
-### **4.1.2 The Ideal User**
+### The Ideal User
 
 The target audience are individuals who are seeking luxury jewelry. Those who want to make gifts or to wear a luxury jewelry for themselves.
 
@@ -97,7 +97,7 @@ The target audience are individuals who are seeking luxury jewelry. Those who wa
 - Ideal user likes to explore new trends and ideas in the jewelry field
 - Ideal user likes to share their opinion in form of **reviews** and **comments**
 
-### **4.1.3 Site Goals**
+### Site Goals
 
 - Offer users ability of shopping online without leaving their home
 - Offer users ability of reading other people comments on products
@@ -105,7 +105,7 @@ The target audience are individuals who are seeking luxury jewelry. Those who wa
 - Offer users the ability to see details of each item in shop ( price, description, collection etc. ) 
 - Provide site visitors with an easy to navigate site to view jewelry products
 
-### **4.1.4 SEO and Web Marketing**
+### SEO and Web Marketing
 
 **Who:** I am marketing predominantly towards a jeweler-enthuasiast.
 **What:** I am selling jewelry, designed to cater towards this audience. I therefore make it very accessible and clear on my site, so that the audience can go directly towards what they are looking for. I include images of jewelry, designed to excite the site viewer into wondering what it's like to wear them with some sophisticated clothes. It was equally important to make clear titles and key pieces of information available for the site viewers to see on which ever respective page/product they are viewing.
@@ -115,7 +115,7 @@ The target audience are individuals who are seeking luxury jewelry. Those who wa
 Software developers play a role in making sure their website can be easily found through search engines, including the reviews of Google Search.
 Therefore, when implementing SEO (Search Engine Optimisation) tools, the best means available to you are through descriptive and relevant keywords, sitemaps.xml and robots.txt files.
 
-### **4.1.5 Keywords and sitemap/robots**
+### Keywords and sitemap/robots
 
 - I included keywords and more tags in my base.html document. This allowed me to define keywords, an author, a site description and a viewport. For the keywords themselves I thought about short and longer words and phrases respectively that might be looked for. 
 
@@ -127,13 +127,13 @@ Therefore, when implementing SEO (Search Engine Optimisation) tools, the best me
 
 - I have a robots.txt file which provides the location of the sitemap and also defines any folders/files which are prohibited from search engine crawlers.
 
-### **4.1.6 Agile Methodologies**
+### Agile Methodologies
 
 To plan tasks to implement for my website, I used Github Projects, which is a Kanban style board to track your project progress. You can track user stories, epics, ideas, to-do items and you can all see what tasks have been completed.
 
 You can see my project board [here](https://github.com/users/SarahGrozav1/projects/8)
 
-### **4.1.7 User stories**
+### User stories
 
 - [User Story: Products Page]([#1](https://github.com/SarahGrozav1/seline-and-tam-jewelry/issues/1))
     - As a Site User I want to be able to view a list of products so that I can select some to purchase.
@@ -202,7 +202,7 @@ You can see my project board [here](https://github.com/users/SarahGrozav1/projec
     - As a Store Owner I want to be able to see mesages from users so that I know their concern about the website
 
 
-### **4.1.8 Epics**
+### Epics
 
 - Epic: Install Django
     - As a Developer I would like to install Django so that I can begin working on my project.
@@ -687,8 +687,6 @@ Full list of technology implemented below:
 This section of the documentation comprises of various manual tests and online validators to check the quality of my code and also to check the functionality of the project.
 
 ---
-
-## Manual Testing
 
 ### Stripe
 
@@ -1176,8 +1174,77 @@ This can be mitigated entirely by using an incognito tab in your browser.
 
 ---
 
+# **12. Deployment**
+
+### Pre-flight checks before starting:
+- Please make sure you have **all** of the following before beginning with the below steps:
+    - A **Github** account and configure either Gitpod or VSCode (Or both)
+    - A **Heroku** account
+    - An **AWS** account
+    - A **Stripe** account
+    - An **ElephantSQL** account
+    - A **Mailchimp Account**
+    - Another Email Account, such as GMail
+
+### Version Control:
+
+- Version control was done through the Gitpod in VSCode, using the following key commands to push updated code to Github:
+    - `git add ,` - to add all new files or file changes in preparation to commit in next step.
+    - `git commit -m ""` - add your commit message inbetween the two quoatation marks, this explains the changes of your lastest version.
+    - `git push` - this is the command that pushed your code up to your github repository.
+
+### Forking a Github Repository:
+
+- Instructions for forking a respositoty:
+    - To fork a chosen repository, look towards the top right of the page, between the watch/unwatch tab and the star tab, and select the "Fork" tab.
+    - By default, forks are named the same as the parent repository, however, you can change this as you see fit. You are also able to add an optional description.
+    - Choose which branch you want to copy if you need to. Only the default branch is copied by default setting.
+    - Click the green "Create Fork" button, and you will now have a forked repository to use.
+
+### Locally Cloning a Github Repository:
+
+- Instructions for cloning a repository:
+    - To clone a repository, first you will need to select your chosen repository and look for the green "Code" button (located next to the "Go to file" and "Add file" buttons).
+    - Next, copy the URL for the repository. By default this is a HTTPS link, however, you can copy an SSH key or by using the Github CLI.
+    - After you have the URL, you are going to want to go to the terminal of your machine and cd (change directory) to the folder where you want to save your working directory to be.
+    - In the terminal, type `git clone` followed by the url link you copied earlier.
+    - Press enter and hopfully you will have successfully cloned the repository locally.
+    - You will also need to make sure you have installed all the required packaged of the project. To do this, paste this code in to the terminal once your workspace is set up: `pip install -r requirements.txt`
+    - You will also need to make an env.py file to run the project. Populate it with the required information, though make sure you include this file in the .gitignore file. The contents of the env.py file should NOT be made public.
 
 
+#### Github docs:
+- For further reading, I would highly suggest the Github Docs: [Github Docs Link](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+
+### Deployment through Heroku:
+
+- Make sure you have a Heroku account before beginning with these steps.
+- You should also make sure you have an AWS account with S3, and a Stripe Account for payments. These should then be configured for your project.
+
+- Once logged in to Heroku, navigate to the personal dashboard and look for the 'New' dropdown button at top right hand corner of the page.
+- In the drop down, select "Create new app - you will be taken to a page where you will be able to name the app and select a region. Once you have filled this information in, click the "Create app" button. Your app is now created.
+- To pair an ElephantSQL (PostgreSQL) Database to your project, as I did to mine, see steps for this in the next section below. Alternatively, you can use a Heroku Postgres database.
+- Next, you should navigate to the Settings tab to set up the config vars. Scroll down slightly to the button that reads "Reveal Config Vars" and click it to open it. We are going to need to add/remove the following information: 
+    - DATABASE_URL: this should have been automatically generated by Heroku for you, but make sure it is populated already.
+    If you are using another service such as ElephantSQL, simply place that database url in here instead. Click add.
+    - USE_AWS: should be set to True. Click add.
+    - AWS_ACCESS_KEY_ID: should be set to your AWS access key, click add.
+    - AWS_SECRET_ACCESS_KEY: should be set to your AWS secret key, click add.
+    - EMAIL_HOST_PASS: In conjuntion with whichever email app provider you use. In my case, GMail and they provide you with a unique pass code to enter in to your config. Click add.
+    - SEND_GRID_API: Should be set to your SendGrid API Key. Click add.
+    - EMAIL_HOST_USER: this will be your email address. Click add.
+    - SECRET_KEY: This should be a secret password, do not publish this anywhere. Click add.
+    - STRIPE_SECRET_KEY: Set to your Stripe Secret Key. Click add.
+    - STRIPE_PUBLISHABLE_KEY: Set to your Stripe Publishable key. Click add.
+    - API_KEY: insert your stripe api key here. Click add.
+    - DISABLE_COLLECTSTATIC: Should have been set to 1 during development. You will REMOVE this for full deployment. Click the 'x' to remove it. However, if you set up a dynamic DEBUG variable in settings.py, like so: `DEBUG = 'DEVELOPMENT' in os.environ`, you can remove it earlier.
+
+- After this, head to the Deploy tab and scroll down to the Deployment Method section and select "Github"
+- Next, in the "App connected to GitHub" section, look up your account and repo to pair it to the heroku app (click connect).
+- Head to the bottom of the page where you will see a section called "Manual Deploy". Select the 'main' branch in the drop down and click the 'Deploy Branch' button.
+- Wait for the deployment to complete, and when prompted, click the "View/Open App" button to see the launched site.
+
+---
 
 
 

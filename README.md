@@ -14,6 +14,116 @@
 
 # **2. Table of Contents**
 
+- [***Seline & Tam Jewelry - Portfolio Project 5 Ecommerce***](#---seline---tam-jewelry---portfolio-project-5-ecommerce---)
+- [**1. Key project information**](#--1-key-project-information--)
+- [**2. Table of Contents**](#--2-table-of-contents--)
+- [**3. Wireframes and Planning**](#--3-wireframes-and-planning--)
+    + [Canva wireframes/mockups](#canva-wireframes-mockups)
+    + [Desktop](#desktop)
+      - [Home](#home)
+      - [Clock](#clock)
+      - [Collection](#collection)
+      - [Promise](#promise)
+      - [Contact](#contact)
+      - [Products](#products)
+      - [Product Detail](#product-detail)
+      - [Shopping Bag](#shopping-bag)
+      - [Checkout](#checkout)
+      - [Profile](#profile)
+    + [Early Development](#early-development)
+- [**4. User Experience (UX)**](#--4-user-experience--ux---)
+    + [The Idea](#the-idea)
+    + [The Ideal User](#the-ideal-user)
+    + [Site Goals](#site-goals)
+    + [SEO and Web Marketing](#seo-and-web-marketing)
+    + [Keywords and sitemap/robots](#keywords-and-sitemap-robots)
+    + [Agile Methodologies](#agile-methodologies)
+    + [User stories](#user-stories)
+    + [Epics](#epics)
+- [**5. Features**](#--5-features--)
+- [**5. Design**](#--5-design--)
+- [**6. Facebook**](#--6-facebook--)
+- [**7. Future Implementations**](#--7-future-implementations--)
+- [**8. Database Schema**](#--8-database-schema--)
+- [**8. Technologies Used**](#--8-technologies-used--)
+- [**9. Python Packages Installed**](#--9-python-packages-installed--)
+- [**10. The Mailchimp**](#--10-the-mailchimp--)
+    + [What is Mailchimp?](#what-is-mailchimp-)
+    + [Why use Mailchimp?](#why-use-mailchimp-)
+    + [How does Mailchimp work?](#how-does-mailchimp-work-)
+- [**11. Testing**](#--11-testing--)
+- [Manual Testing](#manual-testing)
+    + [Stripe](#stripe)
+    + [Home/Index](#home-index)
+    + [Lisa Collection Section](#lisa-collection-section)
+    + [Contact Section](#contact-section)
+    + [Footer](#footer)
+    + [Contact](#contact-1)
+    + [Profile](#profile-1)
+    + [Authentication](#authentication)
+    + [Basket and Bag](#basket-and-bag)
+    + [Management](#management)
+    + [Product Cards](#product-cards)
+    + [Product Detail](#product-detail-1)
+    + [Wishlist](#wishlist)
+  * [HTML Validation](#html-validation)
+    + [/templates](#-templates)
+    + [/home](#-home)
+    + [/products](#-products)
+    + [/profiles](#-profiles)
+    + [/shpbag](#-shpbag)
+    + [/checkout](#-checkout)
+      - [Base.html, Main-nav.html, Index.html](#basehtml--main-navhtml--indexhtml)
+    + [Current HTML Errors/Issues/Explanations:](#current-html-errors-issues-explanations-)
+  * [CSS Validation](#css-validation)
+    + [/static/css](#-static-css)
+      - [style.css](#stylecss)
+      - [profile.css](#profilecss)
+    + [Current CSS Errors/Issues/Explanations:](#current-css-errors-issues-explanations-)
+  * [JS Validation](#js-validation)
+    + [clock/js](#clock-js)
+    + [cards/js](#cards-js)
+    + [stripe/js](#stripe-js)
+      - [clock.js](#clockjs)
+      - [cards.js](#cardsjs)
+      - [stripe_elements.js](#stripe-elementsjs)
+      - [increment-decrement js](#increment-decrement-js)
+    + [Current JS Errors/Issues/Explanations:](#current-js-errors-issues-explanations-)
+    + [Current JS Errors/Issues/Explanations:](#current-js-errors-issues-explanations--1)
+  * [Python Validation](#python-validation)
+    + [/jewelry](#-jewelry)
+    + [/home](#-home-1)
+    + [/products](#-products-1)
+    + [/profiles](#-profiles-1)
+    + [/shpbag](#-shpbag-1)
+    + [/usercheckout](#-usercheckout)
+      - [/jewelry](#-jewelry-1)
+      - [/home](#-home-2)
+      - [/products](#-products-2)
+      - [/profiles](#-profiles-2)
+      - [/shpbag](#-shpbag-2)
+      - [/usercheckout](#-usercheckout-1)
+    + [Current Python Errors/Issues/Explanations:](#current-python-errors-issues-explanations-)
+  * [Lighthouse Performance Testing](#lighthouse-performance-testing)
+  * [Browser Testing](#browser-testing)
+    + [Responsiveness](#responsiveness)
+  * [Bugs and Issues](#bugs-and-issues)
+    + [Current Unresolved Bugs](#current-unresolved-bugs)
+- [**12. Deployment**](#--12-deployment--)
+    + [Pre-flight checks before starting:](#pre-flight-checks-before-starting-)
+    + [Version Control:](#version-control-)
+    + [Forking a Github Repository:](#forking-a-github-repository-)
+    + [Locally Cloning a Github Repository:](#locally-cloning-a-github-repository-)
+      - [Github docs:](#github-docs-)
+    + [Deployment through Heroku:](#deployment-through-heroku-)
+- [**13. Peer Reviews**](#--13-peer-reviews--)
+- [**14. Credits**](#--14-credits--)
+    + [Code Help:](#code-help-)
+  * [Personal Credits](#personal-credits)
+  * [Media/Images:](#media-images-)
+- [**15. Final Thoughts**](#--15-final-thoughts--)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ---
 
@@ -1286,3 +1396,32 @@ I generated my sitemap.xml using the steps from Boutique Ado Project from [this 
 
 I generated my robots.txt file using the steps from Boutique Ado Project from [this site](https://www.seoptimer.com/robots-txt-generator)
     
+## Personal Credits
+
+- Many Thanks to my C.I Mentor Daisy McGirr, who has been guiding me and advising me through this project as well as all projects since PP2 - Her input in our mentor sessions has been instrumental in getting me this far and so I have to say I massive thank you to her for that!
+
+- Thanks to Matt Boden, who has guided me and explained me about database and how it works.
+
+- Tutor support - helped me work out an issue with my AWS configuration where I was stuck and sat in front of my screen for over 3 hours! They are so patient, understanding and methodical and they also helped me to debug an issue I was having with my database.
+
+- I would like to thank to my husband and family for their support through all this course, without them I couldn't be here.
+
+## Media/Images:
+
+I have downloaded my images from [Unsplash](https://unsplash.com/).
+I used Canva for designing my project and there I have made a color pallete. The colors are from the home background image.
+
+---
+
+# **15. Final Thoughts**
+
+This is my fifth and final project with Code Institute. A Full-Stack E-commerce jewelry business, selling jewelries and developed using the Django Framework, AWS, Heroku and Stripe. Written with HTML, CSS, Python and Javascript (JQuery).
+
+This marks the end of a year long journey with C.I, from someone with zero background in software development to someone who has created a Github portfolio of 5 graded projects to proudly display the development in my own learning and new-found abilities. 
+
+I thoroughly look forward to continuing to practice, grow and develop existing coding skills as well as learn new languages in due course.
+I'd like to thank everyone who has helped me along the way, because it certainly would not have been possible without your support, teaching and encouragement.
+
+---
+
+

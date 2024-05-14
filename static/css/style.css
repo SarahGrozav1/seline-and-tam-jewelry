@@ -331,7 +331,6 @@ body {
 #mc_embed_signup{
     clear:left;
     font-family: Playfair Display, sans-serif;
-    width: 600px;
 }
 
 /* Footer */
@@ -737,6 +736,7 @@ input:checked + .rate label:hover, input:checked ~ .rate label:hover, input:chec
     .custom-shape-divider-top-1714221927 {
         visibility: hidden;
     }
+
 }
 
 @media (max-width: 576px) {
